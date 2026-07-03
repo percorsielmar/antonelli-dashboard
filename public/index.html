@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pascale 500kW - Dashboard Energetica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            solar: { 50: '#fffbeb', 100: '#fef3c7', 200: '#fde68a', 300: '#fcd34d', 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' },
+            energy: { 50: '#ecfdf5', 100: '#d1fae5', 200: '#a7f3d0', 300: '#6ee7b7', 400: '#34d399', 500: '#10b981', 600: '#059669' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+    .glass-solid { background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12); }
+    .pulse-dot { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{ opacity:1; } 50%{ opacity:0.5; } }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); }
+    .card-glow:hover { box-shadow: 0 0 30px rgba(251, 191, 36, 0.1); }
+    .tab-active { background: rgba(251,191,36,0.15); color: #fbbf24; border-color: #fbbf24; }
+    .tab-btn { transition: all 0.2s; }
+    .tab-btn:hover { background: rgba(255,255,255,0.05); }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen font-sans text-white">
+  
+  <!-- Header -->
+  <header class="border-b border-white/10 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-solar-500 rounded-lg flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold">Impianto Pascale</h1>
+          <p class="text-xs text-gray-400">500 kWp - Monitoraggio Energetico</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 flex-wrap">
+        <!-- Filtro Inverter -->
+        <select id="inverter-filter" onchange="onFilterChange()" class="text-xs px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 focus:outline-none focus:border-solar-400">
+          <option value="">Tutti gli Inverter</option>
+        </select>
+        <div id="status-indicator" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+          <div class="w-2 h-2 rounded-full bg-gray-500" id="status-dot"></div>
+          <span class="text-xs text-gray-400" id="status-text">Connessione...</span>
+        </div>
+        <span class="text-xs text-gray-500" id="last-update">--</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tab Navigation -->
+  <nav class="border-b border-white/10 px-6">
+    <div class="max-w-7xl mx-auto flex gap-1 py-2">
+      <button class="tab-btn tab-active text-xs px-4 py-2 rounded-lg border border-transparent font-medium" onclick="switchTab('realtime')" data-tab="realtime">Real-Time</button>
+      <button class="tab-btn text-xs px-4 py-2 rounded-lg border border-transparent text-gray-400 font-medium" onclick="switchTab('day')" data-tab="day">Giorno</button>
+      <button class="tab-btn text-xs px-4 py-2 rounded-lg border border-transparent text-gray-400 font-medium" onclick="switchTab('month')" data-tab="month">Mese</button>
+      <button class="tab-btn text-xs px-4 py-2 rounded-lg border border-transparent text-gray-400 font-medium" onclick="switchTab('year')" data-tab="year">Anno</button>
+      <button class="tab-btn text-xs px-4 py-2 rounded-lg border border-transparent text-gray-400 font-medium" onclick="switchTab('pvgis')" data-tab="pvgis">Analisi PVGIS (200kWp)</button>
+      <button class="tab-btn text-xs px-4 py-2 rounded-lg border border-transparent text-gray-400 font-medium" onclick="switchTab('export')" data-tab="export">Esporta CSV</button>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-6 py-6">
+
+    <!-- ========== TAB: REAL-TIME ========== -->
+    <div id="tab-realtime">
+      <!-- KPI Cards -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="glass rounded-2xl p-5 card-glow">
+          <span class="text-xs text-gray-400 uppercase tracking-wide">Potenza Totale</span>
+          <div class="flex items-baseline gap-1 mt-2">
+            <span class="text-3xl font-bold text-solar-400" id="kpi-power">--</span>
+            <span class="text-sm text-gray-400">kW</span>
+          </div>
+          <div class="mt-2 h-1.5 bg-white/5 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-solar-500 to-solar-300 rounded-full transition-all duration-1000" id="power-bar" style="width:0%"></div>
+          </div>
+          <span class="text-xs text-gray-500 mt-1 block" id="power-percent">0%</span>
+        </div>
+        <div class="glass rounded-2xl p-5 card-glow">
+          <span class="text-xs text-gray-400 uppercase tracking-wide">Produzione Oggi</span>
+          <div class="flex items-baseline gap-1 mt-2">
+            <span class="text-3xl font-bold text-energy-400" id="kpi-today">--</span>
+            <span class="text-sm text-gray-400">kWh</span>
+          </div>
+          <p class="text-xs text-gray-500 mt-2" id="today-equivalent">--</p>
+        </div>
+        <div class="glass rounded-2xl p-5 card-glow">
+          <span class="text-xs text-gray-400 uppercase tracking-wide">Produzione Totale</span>
+          <div class="flex items-baseline gap-1 mt-2">
+            <span class="text-3xl font-bold text-blue-400" id="kpi-total">--</span>
+            <span class="text-sm text-gray-400">MWh</span>
+          </div>
+          <p class="text-xs text-gray-500 mt-2" id="co2-saved">--</p>
+        </div>
+        <div class="glass rounded-2xl p-5 card-glow">
+          <span class="text-xs text-gray-400 uppercase tracking-wide">Inverter Attivi</span>
+          <div class="flex items-baseline gap-1 mt-2">
+            <span class="text-3xl font-bold text-purple-400" id="kpi-active">--</span>
+            <span class="text-sm text-gray-400">/ <span id="kpi-total-inv">6</span></span>
+          </div>
+          <p class="text-xs text-gray-500 mt-2" id="inverter-summary">--</p>
+        </div>
+      </div>
+
+      <!-- Rete / Batteria -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="glass rounded-xl p-4">
+          <div class="flex items-center gap-2 mb-1">
+            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"/></svg>
+            <span class="text-xs text-gray-400">Immissione in Rete</span>
+          </div>
+          <p class="text-2xl font-bold text-green-400" id="feed-in-power">-- kW</p>
+          <p class="text-xs text-gray-500">Totale: <span id="feed-in-energy">--</span> kWh</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <div class="flex items-center gap-2 mb-1">
+            <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 13l-5 5m0 0l-5-5m5 5V6"/></svg>
+            <span class="text-xs text-gray-400">Consumo da Rete</span>
+          </div>
+          <p class="text-2xl font-bold text-red-400" id="grid-power">-- kW</p>
+          <p class="text-xs text-gray-500">Totale: <span id="consume-energy">--</span> MWh</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <div class="flex items-center gap-2 mb-1">
+            <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            <span class="text-xs text-gray-400">Batteria (Hybrid)</span>
+          </div>
+          <p class="text-2xl font-bold text-cyan-400" id="bat-info">-- %</p>
+          <p class="text-xs text-gray-500" id="bat-power">--</p>
+        </div>
+      </div>
+
+      <!-- Charts -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <div class="glass rounded-2xl p-5">
+          <h3 class="text-sm font-semibold text-gray-300 mb-3">Potenza per Inverter (kW)</h3>
+          <div class="h-64"><canvas id="inverter-bar-chart"></canvas></div>
+        </div>
+        <div class="glass rounded-2xl p-5">
+          <h3 class="text-sm font-semibold text-gray-300 mb-3">Produzione Oggi per Inverter (kWh)</h3>
+          <div class="h-64"><canvas id="yield-bar-chart"></canvas></div>
+        </div>
+      </div>
+
+      <!-- Andamento Potenza + Inverter Cards -->
+      <div class="glass rounded-2xl p-5 mb-6">
+        <h3 class="text-sm font-semibold text-gray-300 mb-3">Andamento Potenza Totale</h3>
+        <div class="h-56"><canvas id="power-chart"></canvas></div>
+      </div>
+      <div class="mb-6">
+        <h3 class="text-sm font-semibold text-gray-300 mb-3">Dettaglio Inverter</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="inverter-cards"></div>
+      </div>
+    </div>
+
+    <!-- ========== TAB: GIORNO ========== -->
+    <div id="tab-day" class="hidden">
+      <div class="flex items-center gap-3 mb-6 flex-wrap">
+        <button onclick="navigateDay(-1)" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 text-sm">&larr;</button>
+        <input type="date" id="day-picker" onchange="loadDayData()" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 text-sm focus:outline-none focus:border-solar-400">
+        <button onclick="navigateDay(1)" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 text-sm">&rarr;</button>
+        <span class="text-xs text-gray-500" id="day-info">--</span>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Produzione Giorno</span>
+          <p class="text-2xl font-bold text-energy-400 mt-1" id="day-yield">-- kWh</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Picco Potenza</span>
+          <p class="text-2xl font-bold text-solar-400 mt-1" id="day-peak">-- kW</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Ore Equivalenti</span>
+          <p class="text-2xl font-bold text-blue-400 mt-1" id="day-hours">--</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Campionamenti</span>
+          <p class="text-2xl font-bold text-purple-400 mt-1" id="day-samples">--</p>
+        </div>
+      </div>
+      <div class="glass rounded-2xl p-5 mb-6">
+        <h3 class="text-sm font-semibold text-gray-300 mb-3">Curva di Potenza</h3>
+        <div class="h-72"><canvas id="day-power-chart"></canvas></div>
+      </div>
+      <div class="glass rounded-2xl p-5">
+        <h3 class="text-sm font-semibold text-gray-300 mb-3">Produzione Cumulata</h3>
+        <div class="h-72"><canvas id="day-yield-chart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- ========== TAB: MESE ========== -->
+    <div id="tab-month" class="hidden">
+      <div class="flex items-center gap-3 mb-6 flex-wrap">
+        <button onclick="navigateMonth(-1)" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 text-sm">&larr;</button>
+        <select id="month-picker-m" onchange="loadMonthData()" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 text-sm focus:outline-none">
+          <option value="1">Gennaio</option><option value="2">Febbraio</option><option value="3">Marzo</option>
+          <option value="4">Aprile</option><option value="5">Maggio</option><option value="6">Giugno</option>
+          <option value="7">Luglio</option><option value="8">Agosto</option><option value="9">Settembre</option>
+          <option value="10">Ottobre</option><option value="11">Novembre</option><option value="12">Dicembre</option>
+        </select>
+        <select id="month-picker-y" onchange="loadMonthData()" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 text-sm focus:outline-none"></select>
+        <button onclick="navigateMonth(1)" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 text-sm">&rarr;</button>
+        <span class="text-xs text-gray-500" id="month-info">--</span>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Produzione Mese</span>
+          <p class="text-2xl font-bold text-energy-400 mt-1" id="month-yield">-- kWh</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Media Giornaliera</span>
+          <p class="text-2xl font-bold text-solar-400 mt-1" id="month-avg">-- kWh</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Giorni con Dati</span>
+          <p class="text-2xl font-bold text-blue-400 mt-1" id="month-days">--</p>
+        </div>
+      </div>
+      <div class="glass rounded-2xl p-5">
+        <h3 class="text-sm font-semibold text-gray-300 mb-3">Produzione Giornaliera (kWh)</h3>
+        <div class="h-80"><canvas id="month-chart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- ========== TAB: ANNO ========== -->
+    <div id="tab-year" class="hidden">
+      <div class="flex items-center gap-3 mb-6 flex-wrap">
+        <button onclick="navigateYear(-1)" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 text-sm">&larr;</button>
+        <select id="year-picker" onchange="loadYearData()" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 text-sm focus:outline-none"></select>
+        <button onclick="navigateYear(1)" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 text-sm">&rarr;</button>
+        <span class="text-xs text-gray-500" id="year-info">--</span>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Produzione Anno</span>
+          <p class="text-2xl font-bold text-energy-400 mt-1" id="year-yield">-- MWh</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Media Mensile</span>
+          <p class="text-2xl font-bold text-solar-400 mt-1" id="year-avg">-- MWh</p>
+        </div>
+      </div>
+      <div class="glass rounded-2xl p-5">
+        <h3 class="text-sm font-semibold text-gray-300 mb-3">Produzione Mensile (kWh)</h3>
+        <div class="h-80"><canvas id="year-chart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- ========== TAB: ANALISI PVGIS (200kWp) ========== -->
+    <div id="tab-pvgis" class="hidden">
+      <!-- Summary Cards -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Produzione Combinata (700kWp)</span>
+          <p class="text-2xl font-bold text-energy-400 mt-1" id="pvgis-yield">-- MWh</p>
+          <p class="text-xs text-gray-500">Esistente + Potenziamento <span id="pvgis-avg-yield">--</span> kWh/gg</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Consumo Pascale Totale</span>
+          <p class="text-2xl font-bold text-red-400 mt-1" id="pvgis-consumed">-- MWh</p>
+          <p class="text-xs text-gray-500">Media/gg: <span id="pvgis-avg-consumed">--</span> kWh</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Autoconsumo Totale Stimato</span>
+          <p class="text-2xl font-bold text-solar-400 mt-1" id="pvgis-self-consume">-- MWh</p>
+          <p class="text-xs text-gray-500">Percentuale: <span id="pvgis-self-consume-pct">--</span>% della prod. tot.</p>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <span class="text-xs text-gray-400">Nuova Autosufficienza</span>
+          <p class="text-2xl font-bold text-cyan-400 mt-1" id="pvgis-autosuff">-- %</p>
+          <p class="text-xs text-gray-500">Nuova Immissione: <span id="pvgis-feedin">--</span> MWh/anno</p>
+        </div>
+      </div>
+
+      <!-- Main Chart -->
+      <div class="glass rounded-2xl p-5 mb-6">
+        <h3 class="text-sm font-semibold text-gray-300 mb-3">Confronto Mensile: Consumo vs Produzione Totale (Esistente + Potenziamento 200kWp)</h3>
+        <div class="h-96"><canvas id="pvgis-chart"></canvas></div>
+      </div>
+
+      <!-- Analysis and Battery Feasibility -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Studio Congruenza -->
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-md font-bold text-solar-400 mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            Studio dell'effetto del Potenziamento da 200 kWp
+          </h3>
+          <div class="space-y-4 text-sm text-gray-300">
+            <p>
+              Prendiamo atto che i <strong>500 kWp esistenti sono già operativi</strong>. Lo storico mostra una produzione iniziale inferiore (Luglio 2025) in crescita, interrotta da un fermo totale per manutenzione straordinaria a Novembre e Dicembre 2025 (che ha azzerato l'output). 
+            </p>
+            <p>
+              L'aggiunta del <strong>potenziamento da 200 kWp (inclinazione 5°, orientamento 70° ENE)</strong> porta la potenza totale dell'impianto a <strong>700 kWp</strong>.
+            </p>
+            <div>
+              <strong class="text-white block mb-1">Risultati dell'Integrazione:</strong>
+              <ul class="list-disc pl-5 space-y-1 text-xs text-gray-400">
+                <li><strong>Incremento della Produzione:</strong> La produzione solare passa da 268 MWh a <strong>504 MWh/anno</strong> (+87%), colmando sensibilmente il deficit della fabbrica.</li>
+                <li><strong>Innalzamento dell'Autosufficienza:</strong> La quota di fabbisogno aziendale coperta direttamente dal sole sale dal 18% al <strong>28%</strong>.</li>
+                <li><strong>Compatibilità ENE 5°:</strong> Essendo un'espansione orientata a Est-Nord-Est con pochissima pendenza, genera una produzione mattutina eccellente e un profilo estivo diffuso. Questo si sposa perfettamente con le ore lavorative e i carichi dei frigoriferi industriali.</li>
+              </ul>
+            </div>
+            <p class="text-xs text-gray-400 border-t border-white/10 pt-3">
+              <strong>Giudizio di Congruenza:</strong> Il potenziamento da 200 kWp è <strong>straordinariamente congruo</strong>. Pur mantenendo un deficit medio di circa 2.670 kWh/giorno (che l'azienda continuerà a prelevare dalla rete o dovrà coprire con ulteriore fotovoltaico), l'investimento ha un tasso di autoconsumo diretto altissimo (**76%** della produzione totale combinata).
+            </p>
+          </div>
+        </div>
+
+        <!-- Analisi Batterie di Accumulo -->
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-md font-bold text-cyan-400 mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Fattibilità e Dimensionamento Batterie (0 kWh attuali)
+          </h3>
+          <div class="space-y-4 text-sm text-gray-300">
+            <p>
+              Mentre con l'impianto base da 500 kWp le eccedenze erano quasi nulle (a causa dell'ottimo autoconsumo diurno), l'introduzione dei 200 kWp aggiuntivi <strong>cambia radicalmente lo scenario e rende l'accumulo estremamente interessante</strong>.
+            </p>
+            <div>
+              <strong class="text-white block mb-1">Perché le batterie ORA diventano vantaggiose?</strong>
+              <ul class="list-disc pl-5 space-y-1 text-xs text-gray-400">
+                <li><strong>Generazione di Eccedenze Reali:</strong> Il sistema combinato immette in rete ben <strong>121.182 kWh/anno</strong> (una media di <strong>376 kWh/giorno</strong>), concentrati nelle ore centrali estive e nei weekend.</li>
+                <li><strong>Dimensionamento Consigliato (200 - 300 kWh):</strong> Un accumulo industriale da <strong>200 kWh</strong> o <strong>250 kWh</strong> permetterebbe di incamerare queste eccedenze diurne e scaricarle interamente la sera/notte, quando i frigoriferi continuano a consumare ma il sole è tramontato.</li>
+                <li><strong>Rientro Economico Stimato:</strong> Spostando 121 MWh dall'immissione in rete all'autoconsumo notturno, si eviterebbe l'acquisto di energia dalla rete. Con un valore dell'energia di €0.20/kWh, il risparmio aggiuntivo potenziale è di circa <strong>€24.200 all'anno</strong>, ammortizzando un sistema di accumulo industriale in meno di 4-5 anni.</li>
+              </ul>
+            </div>
+            <p class="text-xs text-cyan-300 border-t border-white/10 pt-3">
+              <strong>Raccomandazione Strategica:</strong> L'installazione del potenziamento da 200 kWp e di un sistema di batterie da <strong>200-250 kWh</strong> dovrebbero essere realizzati <strong>in tandem</strong>. Il potenziamento genera l'eccedenza, la batteria la sposta sulla notte, massimizzando il ritorno di entrambe le tecnologie.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== TAB: EXPORT CSV ========== -->
+    <div id="tab-export" class="hidden">
+      <div class="glass rounded-2xl p-6 max-w-2xl">
+        <h2 class="text-lg font-bold mb-1">Esporta Dati di Produzione</h2>
+        <p class="text-xs text-gray-400 mb-6">Scarica un file CSV con i dati raccolti, filtrati per periodo e inverter.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+          <div>
+            <label class="text-xs text-gray-400 block mb-1">Data Inizio</label>
+            <input type="date" id="csv-from" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-200 text-sm focus:outline-none focus:border-solar-400">
+          </div>
+          <div>
+            <label class="text-xs text-gray-400 block mb-1">Data Fine</label>
+            <input type="date" id="csv-to" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-200 text-sm focus:outline-none focus:border-solar-400">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+          <div>
+            <label class="text-xs text-gray-400 block mb-1">Inverter</label>
+            <select id="csv-inverter" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-200 text-sm focus:outline-none">
+              <option value="">Tutti (Globale Impianto)</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs text-gray-400 block mb-1">Formato</label>
+            <select id="csv-mode" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-200 text-sm focus:outline-none">
+              <option value="detail">Dettaglio (ogni campionamento)</option>
+              <option value="daily">Riepilogo Giornaliero</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Quick period buttons -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="text-xs text-gray-500 self-center mr-1">Periodo rapido:</span>
+          <button onclick="setCsvPeriod('today')" class="text-xs px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10">Oggi</button>
+          <button onclick="setCsvPeriod('week')" class="text-xs px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10">Ultimi 7 gg</button>
+          <button onclick="setCsvPeriod('month')" class="text-xs px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10">Ultimo mese</button>
+          <button onclick="setCsvPeriod('year')" class="text-xs px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10">Ultimo anno</button>
+          <button onclick="setCsvPeriod('all')" class="text-xs px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10">Tutti i dati</button>
+        </div>
+
+        <button onclick="downloadCSV()" class="w-full py-3 rounded-xl bg-solar-500 hover:bg-solar-600 text-white font-semibold text-sm transition-colors flex items-center justify-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Scarica CSV
+        </button>
+
+        <p class="text-xs text-gray-500 mt-4" id="csv-status">Seleziona un periodo e clicca per scaricare.</p>
+
+        <!-- Info box -->
+        <div class="mt-6 p-4 rounded-xl bg-white/5 border border-white/10">
+          <h4 class="text-xs font-semibold text-gray-300 mb-2">Formati disponibili</h4>
+          <ul class="text-xs text-gray-400 space-y-1">
+            <li><strong>Dettaglio:</strong> Una riga per ogni campionamento (ogni 5 min). Include potenza, produzione, rete, DC, batteria.</li>
+            <li><strong>Riepilogo Giornaliero:</strong> Una riga per giorno con produzione totale e picco di potenza.</li>
+            <li><strong>Globale:</strong> Dati aggregati di tutto l'impianto + sezione dettaglio per inverter.</li>
+            <li><strong>Singolo Inverter:</strong> Tutti i parametri del singolo inverter selezionato.</li>
+          </ul>
+          <p class="text-xs text-gray-500 mt-2">Il CSV usa il separatore <code>;</code> (compatibile con Excel italiano).</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

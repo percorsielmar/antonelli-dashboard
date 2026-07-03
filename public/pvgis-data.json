@@ -1,0 +1,3388 @@
+{
+  "summary": {
+    "daysCount": 322,
+    "sumConsumed": 1364944,
+    "sumRealYield": 268897,
+    "sumPvgisYield": 235512,
+    "sumCombinedYield": 504409,
+    "sumCombinedAutoconsumo": 383228,
+    "sumCombinedImmissione": 121182,
+    "avgDailyConsumed": 4239,
+    "avgDailyRealYield": 835,
+    "avgDailyPvgisYield": 731,
+    "avgDailyCombinedYield": 1566,
+    "avgDailyDelta": 2672,
+    "combinedAutoconsumoPct": 76,
+    "combinedAutosufficienzaPct": 28,
+    "realAutoconsumoPct": 89,
+    "realAutosufficienzaPct": 18
+  },
+  "monthlyList": [
+    {
+      "month": "2025-06",
+      "consumed": 8042,
+      "realYield": 9326,
+      "pvgisYield": 25904,
+      "combinedYield": 35230,
+      "combinedAutoconsumo": 8042,
+      "combinedImmissione": 27188,
+      "delta": -27188,
+      "autoconsumoPct": 23,
+      "autosufficienzaPct": 100
+    },
+    {
+      "month": "2025-07",
+      "consumed": 28501,
+      "realYield": 28684,
+      "pvgisYield": 32925,
+      "combinedYield": 61609,
+      "combinedAutoconsumo": 28501,
+      "combinedImmissione": 33109,
+      "delta": -33109,
+      "autoconsumoPct": 46,
+      "autosufficienzaPct": 100
+    },
+    {
+      "month": "2025-08",
+      "consumed": 386333,
+      "realYield": 36600,
+      "pvgisYield": 28422,
+      "combinedYield": 65022,
+      "combinedAutoconsumo": 49475,
+      "combinedImmissione": 15547,
+      "delta": 321311,
+      "autoconsumoPct": 76,
+      "autosufficienzaPct": 13
+    },
+    {
+      "month": "2025-09",
+      "consumed": 161031,
+      "realYield": 23225,
+      "pvgisYield": 21412,
+      "combinedYield": 44637,
+      "combinedAutoconsumo": 38156,
+      "combinedImmissione": 6481,
+      "delta": 116393,
+      "autoconsumoPct": 85,
+      "autosufficienzaPct": 24
+    },
+    {
+      "month": "2025-10",
+      "consumed": 180037,
+      "realYield": 21013,
+      "pvgisYield": 16159,
+      "combinedYield": 37172,
+      "combinedAutoconsumo": 32578,
+      "combinedImmissione": 4594,
+      "delta": 142865,
+      "autoconsumoPct": 88,
+      "autosufficienzaPct": 18
+    },
+    {
+      "month": "2025-11",
+      "consumed": 109230,
+      "realYield": 37230,
+      "pvgisYield": 9187,
+      "combinedYield": 46416,
+      "combinedAutoconsumo": 43685,
+      "combinedImmissione": 2731,
+      "delta": 62814,
+      "autoconsumoPct": 94,
+      "autosufficienzaPct": 40
+    },
+    {
+      "month": "2026-01",
+      "consumed": 161573,
+      "realYield": 7002,
+      "pvgisYield": 6559,
+      "combinedYield": 13561,
+      "combinedAutoconsumo": 11812,
+      "combinedImmissione": 1749,
+      "delta": 148011,
+      "autoconsumoPct": 87,
+      "autosufficienzaPct": 7
+    },
+    {
+      "month": "2026-02",
+      "consumed": 58392,
+      "realYield": 6013,
+      "pvgisYield": 13776,
+      "combinedYield": 19789,
+      "combinedAutoconsumo": 15665,
+      "combinedImmissione": 4124,
+      "delta": 38603,
+      "autoconsumoPct": 79,
+      "autosufficienzaPct": 27
+    },
+    {
+      "month": "2026-03",
+      "consumed": 79027,
+      "realYield": 25729,
+      "pvgisYield": 20820,
+      "combinedYield": 46549,
+      "combinedAutoconsumo": 40348,
+      "combinedImmissione": 6202,
+      "delta": 32477,
+      "autoconsumoPct": 87,
+      "autosufficienzaPct": 51
+    },
+    {
+      "month": "2026-04",
+      "consumed": 75384,
+      "realYield": 32990,
+      "pvgisYield": 24853,
+      "combinedYield": 57842,
+      "combinedAutoconsumo": 49774,
+      "combinedImmissione": 8068,
+      "delta": 17542,
+      "autoconsumoPct": 86,
+      "autosufficienzaPct": 66
+    },
+    {
+      "month": "2026-05",
+      "consumed": 101223,
+      "realYield": 36570,
+      "pvgisYield": 28602,
+      "combinedYield": 65172,
+      "combinedAutoconsumo": 56170,
+      "combinedImmissione": 9002,
+      "delta": 36051,
+      "autoconsumoPct": 86,
+      "autosufficienzaPct": 55
+    },
+    {
+      "month": "2026-06",
+      "consumed": 16173,
+      "realYield": 4517,
+      "pvgisYield": 6893,
+      "combinedYield": 11409,
+      "combinedAutoconsumo": 9022,
+      "combinedImmissione": 2387,
+      "delta": 4763,
+      "autoconsumoPct": 79,
+      "autosufficienzaPct": 56
+    }
+  ],
+  "dailyList": [
+    {
+      "date": "2025-06-06",
+      "consumed": 0,
+      "realYield": 7.6,
+      "pvgisYield": 951.9979999999998,
+      "combinedYield": 959.5979999999998,
+      "delta": -959.5979999999998,
+      "combinedAutoconsumo": 0,
+      "combinedImmissione": 959.5979999999998
+    },
+    {
+      "date": "2025-06-07",
+      "consumed": 17.8,
+      "realYield": 17.8,
+      "pvgisYield": 1084.1525000000001,
+      "combinedYield": 1101.9525,
+      "delta": -1084.1525000000001,
+      "combinedAutoconsumo": 17.8,
+      "combinedImmissione": 1084.1525000000001
+    },
+    {
+      "date": "2025-06-08",
+      "consumed": 21.4,
+      "realYield": 21.4,
+      "pvgisYield": 922.2189999999999,
+      "combinedYield": 943.6189999999999,
+      "delta": -922.2189999999999,
+      "combinedAutoconsumo": 21.4,
+      "combinedImmissione": 922.2189999999999
+    },
+    {
+      "date": "2025-06-09",
+      "consumed": 13,
+      "realYield": 13,
+      "pvgisYield": 883.13,
+      "combinedYield": 896.13,
+      "delta": -883.13,
+      "combinedAutoconsumo": 13,
+      "combinedImmissione": 883.13
+    },
+    {
+      "date": "2025-06-10",
+      "consumed": 12.7,
+      "realYield": 12.7,
+      "pvgisYield": 1019.6865,
+      "combinedYield": 1032.3865,
+      "delta": -1019.6865,
+      "combinedAutoconsumo": 12.7,
+      "combinedImmissione": 1019.6865
+    },
+    {
+      "date": "2025-06-11",
+      "consumed": 124.1,
+      "realYield": 124.1,
+      "pvgisYield": 915.606,
+      "combinedYield": 1039.706,
+      "delta": -915.6059999999999,
+      "combinedAutoconsumo": 124.1,
+      "combinedImmissione": 915.6059999999999
+    },
+    {
+      "date": "2025-06-12",
+      "consumed": 256.5,
+      "realYield": 256.5,
+      "pvgisYield": 1125.889,
+      "combinedYield": 1382.389,
+      "delta": -1125.889,
+      "combinedAutoconsumo": 256.5,
+      "combinedImmissione": 1125.889
+    },
+    {
+      "date": "2025-06-13",
+      "consumed": 218.7,
+      "realYield": 218.7,
+      "pvgisYield": 935.66,
+      "combinedYield": 1154.36,
+      "delta": -935.6599999999999,
+      "combinedAutoconsumo": 218.7,
+      "combinedImmissione": 935.6599999999999
+    },
+    {
+      "date": "2025-06-14",
+      "consumed": 261.5,
+      "realYield": 261.5,
+      "pvgisYield": 1036.3645,
+      "combinedYield": 1297.8645,
+      "delta": -1036.3645,
+      "combinedAutoconsumo": 261.5,
+      "combinedImmissione": 1036.3645
+    },
+    {
+      "date": "2025-06-15",
+      "consumed": 221.5,
+      "realYield": 221.5,
+      "pvgisYield": 1073.1554999999998,
+      "combinedYield": 1294.6554999999998,
+      "delta": -1073.1554999999998,
+      "combinedAutoconsumo": 221.5,
+      "combinedImmissione": 1073.1554999999998
+    },
+    {
+      "date": "2025-06-16",
+      "consumed": 152.8,
+      "realYield": 152.8,
+      "pvgisYield": 1125.5625,
+      "combinedYield": 1278.3625,
+      "delta": -1125.5625,
+      "combinedAutoconsumo": 152.8,
+      "combinedImmissione": 1125.5625
+    },
+    {
+      "date": "2025-06-17",
+      "consumed": 188.5,
+      "realYield": 188.5,
+      "pvgisYield": 1054.4665,
+      "combinedYield": 1242.9665,
+      "delta": -1054.4665,
+      "combinedAutoconsumo": 188.5,
+      "combinedImmissione": 1054.4665
+    },
+    {
+      "date": "2025-06-18",
+      "consumed": 234.1,
+      "realYield": 234.1,
+      "pvgisYield": 1099.867,
+      "combinedYield": 1333.9669999999999,
+      "delta": -1099.867,
+      "combinedAutoconsumo": 234.1,
+      "combinedImmissione": 1099.867
+    },
+    {
+      "date": "2025-06-19",
+      "consumed": 216,
+      "realYield": 216,
+      "pvgisYield": 1015.3880000000001,
+      "combinedYield": 1231.3880000000001,
+      "delta": -1015.3880000000001,
+      "combinedAutoconsumo": 216,
+      "combinedImmissione": 1015.3880000000001
+    },
+    {
+      "date": "2025-06-20",
+      "consumed": 237.1,
+      "realYield": 237.1,
+      "pvgisYield": 1101.0135,
+      "combinedYield": 1338.1135,
+      "delta": -1101.0135,
+      "combinedAutoconsumo": 237.1,
+      "combinedImmissione": 1101.0135
+    },
+    {
+      "date": "2025-06-21",
+      "consumed": 321.6,
+      "realYield": 321.6,
+      "pvgisYield": 1067.2075,
+      "combinedYield": 1388.8075,
+      "delta": -1067.2075,
+      "combinedAutoconsumo": 321.6,
+      "combinedImmissione": 1067.2075
+    },
+    {
+      "date": "2025-06-22",
+      "consumed": 275.8,
+      "realYield": 275.8,
+      "pvgisYield": 1113.124,
+      "combinedYield": 1388.924,
+      "delta": -1113.124,
+      "combinedAutoconsumo": 275.8,
+      "combinedImmissione": 1113.124
+    },
+    {
+      "date": "2025-06-23",
+      "consumed": 394.8,
+      "realYield": 394.8,
+      "pvgisYield": 934.7270000000001,
+      "combinedYield": 1329.527,
+      "delta": -934.7270000000001,
+      "combinedAutoconsumo": 394.8,
+      "combinedImmissione": 934.7270000000001
+    },
+    {
+      "date": "2025-06-24",
+      "consumed": 620,
+      "realYield": 620,
+      "pvgisYield": 944.8405,
+      "combinedYield": 1564.8405,
+      "delta": -944.8405,
+      "combinedAutoconsumo": 620,
+      "combinedImmissione": 944.8405
+    },
+    {
+      "date": "2025-06-25",
+      "consumed": 602,
+      "realYield": 602,
+      "pvgisYield": 1081.079,
+      "combinedYield": 1683.079,
+      "delta": -1081.079,
+      "combinedAutoconsumo": 602,
+      "combinedImmissione": 1081.079
+    },
+    {
+      "date": "2025-06-26",
+      "consumed": 815,
+      "realYield": 815,
+      "pvgisYield": 1147.3595,
+      "combinedYield": 1962.3595,
+      "delta": -1147.3595,
+      "combinedAutoconsumo": 815,
+      "combinedImmissione": 1147.3595
+    },
+    {
+      "date": "2025-06-27",
+      "consumed": 1193.3,
+      "realYield": 1193.3,
+      "pvgisYield": 1160.9859999999999,
+      "combinedYield": 2354.286,
+      "delta": -1160.986,
+      "combinedAutoconsumo": 1193.3,
+      "combinedImmissione": 1160.986
+    },
+    {
+      "date": "2025-06-28",
+      "consumed": 0,
+      "realYield": 1276.7,
+      "pvgisYield": 967.5115,
+      "combinedYield": 2244.2115,
+      "delta": -2244.2115,
+      "combinedAutoconsumo": 0,
+      "combinedImmissione": 2244.2115
+    },
+    {
+      "date": "2025-06-29",
+      "consumed": 537.6,
+      "realYield": 537.6,
+      "pvgisYield": 1022.3275000000001,
+      "combinedYield": 1559.9275000000002,
+      "delta": -1022.3275000000002,
+      "combinedAutoconsumo": 537.6,
+      "combinedImmissione": 1022.3275000000002
+    },
+    {
+      "date": "2025-06-30",
+      "consumed": 1105.8,
+      "realYield": 1105.8,
+      "pvgisYield": 1120.5045,
+      "combinedYield": 2226.3045,
+      "delta": -1120.5045000000002,
+      "combinedAutoconsumo": 1105.8,
+      "combinedImmissione": 1120.5045000000002
+    },
+    {
+      "date": "2025-07-01",
+      "consumed": 1239.7,
+      "realYield": 1239.7,
+      "pvgisYield": 934.9549999999999,
+      "combinedYield": 2174.6549999999997,
+      "delta": -934.9549999999997,
+      "combinedAutoconsumo": 1239.7,
+      "combinedImmissione": 934.9549999999997
+    },
+    {
+      "date": "2025-07-02",
+      "consumed": 1207.4,
+      "realYield": 1207.4,
+      "pvgisYield": 1164.9209999999998,
+      "combinedYield": 2372.321,
+      "delta": -1164.9209999999998,
+      "combinedAutoconsumo": 1207.4,
+      "combinedImmissione": 1164.9209999999998
+    },
+    {
+      "date": "2025-07-03",
+      "consumed": 1097.7,
+      "realYield": 1097.7,
+      "pvgisYield": 1138.1465,
+      "combinedYield": 2235.8465,
+      "delta": -1138.1465,
+      "combinedAutoconsumo": 1097.7,
+      "combinedImmissione": 1138.1465
+    },
+    {
+      "date": "2025-07-04",
+      "consumed": 1148.1,
+      "realYield": 1148.1,
+      "pvgisYield": 969.9715000000001,
+      "combinedYield": 2118.0715,
+      "delta": -969.9715000000001,
+      "combinedAutoconsumo": 1148.1,
+      "combinedImmissione": 969.9715000000001
+    },
+    {
+      "date": "2025-07-05",
+      "consumed": 357.7,
+      "realYield": 357.7,
+      "pvgisYield": 1156.6680000000001,
+      "combinedYield": 1514.3680000000002,
+      "delta": -1156.6680000000001,
+      "combinedAutoconsumo": 357.7,
+      "combinedImmissione": 1156.6680000000001
+    },
+    {
+      "date": "2025-07-06",
+      "consumed": 167.2,
+      "realYield": 167.2,
+      "pvgisYield": 1158.384,
+      "combinedYield": 1325.584,
+      "delta": -1158.384,
+      "combinedAutoconsumo": 167.2,
+      "combinedImmissione": 1158.384
+    },
+    {
+      "date": "2025-07-07",
+      "consumed": 1024.2,
+      "realYield": 1024.2,
+      "pvgisYield": 1114.0674999999999,
+      "combinedYield": 2138.2675,
+      "delta": -1114.0674999999999,
+      "combinedAutoconsumo": 1024.2,
+      "combinedImmissione": 1114.0674999999999
+    },
+    {
+      "date": "2025-07-08",
+      "consumed": 1185.3,
+      "realYield": 1185.3,
+      "pvgisYield": 1043.7930000000001,
+      "combinedYield": 2229.093,
+      "delta": -1043.793,
+      "combinedAutoconsumo": 1185.3,
+      "combinedImmissione": 1043.793
+    },
+    {
+      "date": "2025-07-09",
+      "consumed": 1243,
+      "realYield": 1243,
+      "pvgisYield": 1153.699,
+      "combinedYield": 2396.699,
+      "delta": -1153.699,
+      "combinedAutoconsumo": 1243,
+      "combinedImmissione": 1153.699
+    },
+    {
+      "date": "2025-07-10",
+      "consumed": 659.7,
+      "realYield": 659.7,
+      "pvgisYield": 1156.997,
+      "combinedYield": 1816.6970000000001,
+      "delta": -1156.997,
+      "combinedAutoconsumo": 659.7,
+      "combinedImmissione": 1156.997
+    },
+    {
+      "date": "2025-07-11",
+      "consumed": 1091.5,
+      "realYield": 1097.7,
+      "pvgisYield": 1159.831,
+      "combinedYield": 2257.531,
+      "delta": -1166.031,
+      "combinedAutoconsumo": 1091.5,
+      "combinedImmissione": 1166.031
+    },
+    {
+      "date": "2025-07-12",
+      "consumed": 738.74,
+      "realYield": 749.6,
+      "pvgisYield": 1138.1154999999999,
+      "combinedYield": 1887.7154999999998,
+      "delta": -1148.9754999999998,
+      "combinedAutoconsumo": 738.74,
+      "combinedImmissione": 1148.9754999999998
+    },
+    {
+      "date": "2025-07-13",
+      "consumed": 102.36,
+      "realYield": 184.4,
+      "pvgisYield": 889.8105,
+      "combinedYield": 1074.2105000000001,
+      "delta": -971.8505000000001,
+      "combinedAutoconsumo": 102.36,
+      "combinedImmissione": 971.8505000000001
+    },
+    {
+      "date": "2025-07-14",
+      "consumed": 1162.32,
+      "realYield": 1162.5,
+      "pvgisYield": 1113.955,
+      "combinedYield": 2276.455,
+      "delta": -1114.135,
+      "combinedAutoconsumo": 1162.32,
+      "combinedImmissione": 1114.135
+    },
+    {
+      "date": "2025-07-15",
+      "consumed": 1338.5,
+      "realYield": 1338.6,
+      "pvgisYield": 1098.749,
+      "combinedYield": 2437.349,
+      "delta": -1098.8490000000002,
+      "combinedAutoconsumo": 1338.5,
+      "combinedImmissione": 1098.8490000000002
+    },
+    {
+      "date": "2025-07-16",
+      "consumed": 1100.22,
+      "realYield": 1100.6,
+      "pvgisYield": 960.8725,
+      "combinedYield": 2061.4725,
+      "delta": -961.2524999999998,
+      "combinedAutoconsumo": 1100.22,
+      "combinedImmissione": 961.2524999999998
+    },
+    {
+      "date": "2025-07-17",
+      "consumed": 1210.16,
+      "realYield": 1210.9,
+      "pvgisYield": 954.1955,
+      "combinedYield": 2165.0955000000004,
+      "delta": -954.9355000000003,
+      "combinedAutoconsumo": 1210.16,
+      "combinedImmissione": 954.9355000000003
+    },
+    {
+      "date": "2025-07-18",
+      "consumed": 1222.18,
+      "realYield": 1226.6,
+      "pvgisYield": 1027.774,
+      "combinedYield": 2254.374,
+      "delta": -1032.1939999999997,
+      "combinedAutoconsumo": 1222.18,
+      "combinedImmissione": 1032.1939999999997
+    },
+    {
+      "date": "2025-07-19",
+      "consumed": 716.38,
+      "realYield": 717.4,
+      "pvgisYield": 1049.4610000000002,
+      "combinedYield": 1766.8610000000003,
+      "delta": -1050.4810000000002,
+      "combinedAutoconsumo": 716.38,
+      "combinedImmissione": 1050.4810000000002
+    },
+    {
+      "date": "2025-07-20",
+      "consumed": 559.18,
+      "realYield": 577,
+      "pvgisYield": 1125.315,
+      "combinedYield": 1702.315,
+      "delta": -1143.1350000000002,
+      "combinedAutoconsumo": 559.18,
+      "combinedImmissione": 1143.1350000000002
+    },
+    {
+      "date": "2025-07-21",
+      "consumed": 1100.4,
+      "realYield": 1103.4,
+      "pvgisYield": 1070.4135,
+      "combinedYield": 2173.8135,
+      "delta": -1073.4135,
+      "combinedAutoconsumo": 1100.4,
+      "combinedImmissione": 1073.4135
+    },
+    {
+      "date": "2025-07-22",
+      "consumed": 972.68,
+      "realYield": 978.2,
+      "pvgisYield": 1084.3505,
+      "combinedYield": 2062.5505000000003,
+      "delta": -1089.8705000000004,
+      "combinedAutoconsumo": 972.6800000000001,
+      "combinedImmissione": 1089.8705000000002
+    },
+    {
+      "date": "2025-07-23",
+      "consumed": 1005.82,
+      "realYield": 1009.3,
+      "pvgisYield": 1105.3005,
+      "combinedYield": 2114.6005,
+      "delta": -1108.7804999999998,
+      "combinedAutoconsumo": 1005.82,
+      "combinedImmissione": 1108.7804999999998
+    },
+    {
+      "date": "2025-07-24",
+      "consumed": 933.04,
+      "realYield": 935.2,
+      "pvgisYield": 1058.747,
+      "combinedYield": 1993.9470000000001,
+      "delta": -1060.9070000000002,
+      "combinedAutoconsumo": 933.0400000000001,
+      "combinedImmissione": 1060.9070000000002
+    },
+    {
+      "date": "2025-07-25",
+      "consumed": 803.96,
+      "realYield": 813.9,
+      "pvgisYield": 857.3315,
+      "combinedYield": 1671.2314999999999,
+      "delta": -867.2714999999998,
+      "combinedAutoconsumo": 803.96,
+      "combinedImmissione": 867.2714999999998
+    },
+    {
+      "date": "2025-07-26",
+      "consumed": 710.5,
+      "realYield": 728.6,
+      "pvgisYield": 921.201,
+      "combinedYield": 1649.801,
+      "delta": -939.3009999999999,
+      "combinedAutoconsumo": 710.5,
+      "combinedImmissione": 939.3009999999999
+    },
+    {
+      "date": "2025-07-27",
+      "consumed": 486.86,
+      "realYield": 502.6,
+      "pvgisYield": 1019.9845,
+      "combinedYield": 1522.5845,
+      "delta": -1035.7244999999998,
+      "combinedAutoconsumo": 486.86,
+      "combinedImmissione": 1035.7244999999998
+    },
+    {
+      "date": "2025-07-28",
+      "consumed": 403.9,
+      "realYield": 403.9,
+      "pvgisYield": 1096.6925,
+      "combinedYield": 1500.5925000000002,
+      "delta": -1096.6925,
+      "combinedAutoconsumo": 403.9,
+      "combinedImmissione": 1096.6925
+    },
+    {
+      "date": "2025-07-29",
+      "consumed": 1008.84,
+      "realYield": 1009.5,
+      "pvgisYield": 1094.3319999999999,
+      "combinedYield": 2103.832,
+      "delta": -1094.9919999999997,
+      "combinedAutoconsumo": 1008.84,
+      "combinedImmissione": 1094.9919999999997
+    },
+    {
+      "date": "2025-07-30",
+      "consumed": 1219.32,
+      "realYield": 1219.8,
+      "pvgisYield": 1046.9075,
+      "combinedYield": 2266.7075,
+      "delta": -1047.3875,
+      "combinedAutoconsumo": 1219.32,
+      "combinedImmissione": 1047.3875
+    },
+    {
+      "date": "2025-07-31",
+      "consumed": 1283.96,
+      "realYield": 1284.6,
+      "pvgisYield": 1060.2044999999998,
+      "combinedYield": 2344.8044999999997,
+      "delta": -1060.8444999999997,
+      "combinedAutoconsumo": 1283.96,
+      "combinedImmissione": 1060.8444999999997
+    },
+    {
+      "date": "2025-08-01",
+      "consumed": 1377.22,
+      "realYield": 1380.8,
+      "pvgisYield": 1049.161,
+      "combinedYield": 2429.9610000000002,
+      "delta": -1052.7410000000002,
+      "combinedAutoconsumo": 1377.22,
+      "combinedImmissione": 1052.7410000000002
+    },
+    {
+      "date": "2025-08-02",
+      "consumed": 611.86,
+      "realYield": 626,
+      "pvgisYield": 1054.956,
+      "combinedYield": 1680.956,
+      "delta": -1069.096,
+      "combinedAutoconsumo": 611.86,
+      "combinedImmissione": 1069.096
+    },
+    {
+      "date": "2025-08-03",
+      "consumed": 691.04,
+      "realYield": 699.1,
+      "pvgisYield": 1013.4984999999999,
+      "combinedYield": 1712.5985,
+      "delta": -1021.5585000000001,
+      "combinedAutoconsumo": 691.0400000000001,
+      "combinedImmissione": 1021.5585
+    },
+    {
+      "date": "2025-08-04",
+      "consumed": 1489.5,
+      "realYield": 1489.5,
+      "pvgisYield": 919.9175,
+      "combinedYield": 2409.4175,
+      "delta": -919.9175,
+      "combinedAutoconsumo": 1489.5,
+      "combinedImmissione": 919.9175
+    },
+    {
+      "date": "2025-08-05",
+      "consumed": 1493,
+      "realYield": 1493,
+      "pvgisYield": 863.2099999999999,
+      "combinedYield": 2356.21,
+      "delta": -863.21,
+      "combinedAutoconsumo": 1493,
+      "combinedImmissione": 863.21
+    },
+    {
+      "date": "2025-08-06",
+      "consumed": 1432.2,
+      "realYield": 1432.3,
+      "pvgisYield": 1016.5259999999998,
+      "combinedYield": 2448.826,
+      "delta": -1016.626,
+      "combinedAutoconsumo": 1432.2,
+      "combinedImmissione": 1016.626
+    },
+    {
+      "date": "2025-08-07",
+      "consumed": 1413.1,
+      "realYield": 1413.1,
+      "pvgisYield": 965.1235,
+      "combinedYield": 2378.2235,
+      "delta": -965.1235000000001,
+      "combinedAutoconsumo": 1413.1,
+      "combinedImmissione": 965.1235000000001
+    },
+    {
+      "date": "2025-08-08",
+      "consumed": 1406.2,
+      "realYield": 1406.2,
+      "pvgisYield": 986.7915,
+      "combinedYield": 2392.9915,
+      "delta": -986.7915,
+      "combinedAutoconsumo": 1406.2,
+      "combinedImmissione": 986.7915
+    },
+    {
+      "date": "2025-08-09",
+      "consumed": 254017.73,
+      "realYield": 936.1,
+      "pvgisYield": 806.3985,
+      "combinedYield": 1742.4985000000001,
+      "delta": 252275.23150000002,
+      "combinedAutoconsumo": 1187.029475,
+      "combinedImmissione": 555.4690250000001
+    },
+    {
+      "date": "2025-08-10",
+      "consumed": 2987.25,
+      "realYield": 832.3,
+      "pvgisYield": 946.668,
+      "combinedYield": 1778.9679999999998,
+      "delta": 1208.2820000000002,
+      "combinedAutoconsumo": 1147.0338,
+      "combinedImmissione": 631.9341999999999
+    },
+    {
+      "date": "2025-08-11",
+      "consumed": 3453.12,
+      "realYield": 1546.5,
+      "pvgisYield": 881.0844999999999,
+      "combinedYield": 2427.5845,
+      "delta": 1025.5355,
+      "combinedAutoconsumo": 2295.421825,
+      "combinedImmissione": 132.16267500000004
+    },
+    {
+      "date": "2025-08-12",
+      "consumed": 10298.06,
+      "realYield": 1318.1,
+      "pvgisYield": 996.482,
+      "combinedYield": 2314.582,
+      "delta": 7983.477999999999,
+      "combinedAutoconsumo": 2164.1697,
+      "combinedImmissione": 150.41229999999996
+    },
+    {
+      "date": "2025-08-13",
+      "consumed": 7663.83,
+      "realYield": 1768.1,
+      "pvgisYield": 972.1735000000001,
+      "combinedYield": 2740.2735000000002,
+      "delta": 4923.5565,
+      "combinedAutoconsumo": 2594.067475,
+      "combinedImmissione": 146.2060250000004
+    },
+    {
+      "date": "2025-08-14",
+      "consumed": 6742.65,
+      "realYield": 1406.9,
+      "pvgisYield": 1030.1975,
+      "combinedYield": 2437.0975,
+      "delta": 4305.5525,
+      "combinedAutoconsumo": 2280.147875,
+      "combinedImmissione": 156.94962499999974
+    },
+    {
+      "date": "2025-08-15",
+      "consumed": 3046.48,
+      "realYield": 725.6,
+      "pvgisYield": 1004.118,
+      "combinedYield": 1729.718,
+      "delta": 1316.762,
+      "combinedAutoconsumo": 1568.9603000000002,
+      "combinedImmissione": 160.7576999999999
+    },
+    {
+      "date": "2025-08-16",
+      "consumed": 3370.61,
+      "realYield": 1044,
+      "pvgisYield": 987.913,
+      "combinedYield": 2031.913,
+      "delta": 1338.6970000000001,
+      "combinedAutoconsumo": 1377.58955,
+      "combinedImmissione": 654.3234500000001
+    },
+    {
+      "date": "2025-08-17",
+      "consumed": 715,
+      "realYield": 715,
+      "pvgisYield": 978.073,
+      "combinedYield": 1693.0729999999999,
+      "delta": -978.0729999999999,
+      "combinedAutoconsumo": 715,
+      "combinedImmissione": 978.0729999999999
+    },
+    {
+      "date": "2025-08-18",
+      "consumed": 5335.67,
+      "realYield": 794.1,
+      "pvgisYield": 771.1165,
+      "combinedYield": 1565.2165,
+      "delta": 3770.4535,
+      "combinedAutoconsumo": 848.8890250000001,
+      "combinedImmissione": 716.3274749999999
+    },
+    {
+      "date": "2025-08-19",
+      "consumed": 6952.54,
+      "realYield": 1618.9,
+      "pvgisYield": 844.1429999999999,
+      "combinedYield": 2463.043,
+      "delta": 4489.496999999999,
+      "combinedAutoconsumo": 2336.04155,
+      "combinedImmissione": 127.0014500000002
+    },
+    {
+      "date": "2025-08-20",
+      "consumed": 7479.52,
+      "realYield": 1312.6,
+      "pvgisYield": 932.0415,
+      "combinedYield": 2244.6414999999997,
+      "delta": 5234.878500000001,
+      "combinedAutoconsumo": 2104.655275,
+      "combinedImmissione": 139.98622499999965
+    },
+    {
+      "date": "2025-08-21",
+      "consumed": 6595.67,
+      "realYield": 1450.5,
+      "pvgisYield": 950.303,
+      "combinedYield": 2400.803,
+      "delta": 4194.867,
+      "combinedAutoconsumo": 2257.3175499999998,
+      "combinedImmissione": 143.48545000000013
+    },
+    {
+      "date": "2025-08-22",
+      "consumed": 7344.8,
+      "realYield": 1499.5,
+      "pvgisYield": 908.4949999999999,
+      "combinedYield": 2407.995,
+      "delta": 4936.805,
+      "combinedAutoconsumo": 2271.4407499999998,
+      "combinedImmissione": 136.55425000000014
+    },
+    {
+      "date": "2025-08-23",
+      "consumed": 5052.38,
+      "realYield": 1396.7,
+      "pvgisYield": 910.804,
+      "combinedYield": 2307.504,
+      "delta": 2744.876,
+      "combinedAutoconsumo": 1701.9814000000001,
+      "combinedImmissione": 605.5225999999998
+    },
+    {
+      "date": "2025-08-24",
+      "consumed": 2848.02,
+      "realYield": 805.7,
+      "pvgisYield": 838.0219999999999,
+      "combinedYield": 1643.722,
+      "delta": 1204.298,
+      "combinedAutoconsumo": 1077.4477000000002,
+      "combinedImmissione": 566.2742999999998
+    },
+    {
+      "date": "2025-08-25",
+      "consumed": 6199.72,
+      "realYield": 1657.7,
+      "pvgisYield": 910.912,
+      "combinedYield": 2568.612,
+      "delta": 3631.108,
+      "combinedAutoconsumo": 2431.5951999999997,
+      "combinedImmissione": 137.01680000000033
+    },
+    {
+      "date": "2025-08-26",
+      "consumed": 6974.76,
+      "realYield": 1338.7,
+      "pvgisYield": 947.6324999999999,
+      "combinedYield": 2286.3325,
+      "delta": 4688.4275,
+      "combinedAutoconsumo": 2144.087625,
+      "combinedImmissione": 142.24487499999987
+    },
+    {
+      "date": "2025-08-27",
+      "consumed": 7201.14,
+      "realYield": 1286.3,
+      "pvgisYield": 871.192,
+      "combinedYield": 2157.492,
+      "delta": 5043.648,
+      "combinedAutoconsumo": 2026.8132,
+      "combinedImmissione": 130.67880000000014
+    },
+    {
+      "date": "2025-08-28",
+      "consumed": 8119.78,
+      "realYield": 1155.3,
+      "pvgisYield": 788.144,
+      "combinedYield": 1943.444,
+      "delta": 6176.335999999999,
+      "combinedAutoconsumo": 1825.2224,
+      "combinedImmissione": 118.22159999999985
+    },
+    {
+      "date": "2025-08-29",
+      "consumed": 7339.46,
+      "realYield": 641.2,
+      "pvgisYield": 773.6429999999999,
+      "combinedYield": 1414.8429999999998,
+      "delta": 5924.617,
+      "combinedAutoconsumo": 1298.79655,
+      "combinedImmissione": 116.04644999999982
+    },
+    {
+      "date": "2025-08-30",
+      "consumed": 3983.36,
+      "realYield": 736.3,
+      "pvgisYield": 818.809,
+      "combinedYield": 1555.109,
+      "delta": 2428.251,
+      "combinedAutoconsumo": 1013.3231499999999,
+      "combinedImmissione": 541.78585
+    },
+    {
+      "date": "2025-08-31",
+      "consumed": 2697.37,
+      "realYield": 673.4,
+      "pvgisYield": 684.4970000000001,
+      "combinedYield": 1357.897,
+      "delta": 1339.473,
+      "combinedAutoconsumo": 893.67395,
+      "combinedImmissione": 464.22304999999994
+    },
+    {
+      "date": "2025-09-01",
+      "consumed": 7087.44,
+      "realYield": 812.4,
+      "pvgisYield": 862.9739999999999,
+      "combinedYield": 1675.3739999999998,
+      "delta": 5412.066,
+      "combinedAutoconsumo": 1545.9279,
+      "combinedImmissione": 129.4460999999999
+    },
+    {
+      "date": "2025-09-02",
+      "consumed": 6469.42,
+      "realYield": 708.9,
+      "pvgisYield": 846.5554999999999,
+      "combinedYield": 1555.4555,
+      "delta": 4913.9645,
+      "combinedAutoconsumo": 1428.4721749999999,
+      "combinedImmissione": 126.98332500000015
+    },
+    {
+      "date": "2025-09-03",
+      "consumed": 6231.06,
+      "realYield": 1126.5,
+      "pvgisYield": 754.4205000000001,
+      "combinedYield": 1880.9205000000002,
+      "delta": 4350.1395,
+      "combinedAutoconsumo": 1767.197425,
+      "combinedImmissione": 113.72307500000011
+    },
+    {
+      "date": "2025-09-04",
+      "consumed": 7342.06,
+      "realYield": 1104.5,
+      "pvgisYield": 829.991,
+      "combinedYield": 1934.491,
+      "delta": 5407.569,
+      "combinedAutoconsumo": 1809.99235,
+      "combinedImmissione": 124.49865
+    },
+    {
+      "date": "2025-09-05",
+      "consumed": 4100.04,
+      "realYield": 1056.1,
+      "pvgisYield": 904.626,
+      "combinedYield": 1960.7259999999999,
+      "delta": 2139.3140000000003,
+      "combinedAutoconsumo": 1825.0321,
+      "combinedImmissione": 135.69389999999999
+    },
+    {
+      "date": "2025-09-06",
+      "consumed": 5033.81,
+      "realYield": 980.5,
+      "pvgisYield": 872.8405,
+      "combinedYield": 1853.3405,
+      "delta": 3180.4695,
+      "combinedAutoconsumo": 1274.454175,
+      "combinedImmissione": 578.8863249999999
+    },
+    {
+      "date": "2025-09-07",
+      "consumed": 2770.64,
+      "realYield": 721.1,
+      "pvgisYield": 873.216,
+      "combinedYield": 1594.316,
+      "delta": 1176.3239999999998,
+      "combinedAutoconsumo": 1005.3456,
+      "combinedImmissione": 588.9704
+    },
+    {
+      "date": "2025-09-08",
+      "consumed": 7124.46,
+      "realYield": 883.6,
+      "pvgisYield": 699.186,
+      "combinedYield": 1582.786,
+      "delta": 5541.674,
+      "combinedAutoconsumo": 1477.9081,
+      "combinedImmissione": 104.87789999999995
+    },
+    {
+      "date": "2025-09-09",
+      "consumed": 7227.59,
+      "realYield": 737.2,
+      "pvgisYield": 848.797,
+      "combinedYield": 1585.997,
+      "delta": 5641.593,
+      "combinedAutoconsumo": 1458.6774500000001,
+      "combinedImmissione": 127.31954999999994
+    },
+    {
+      "date": "2025-09-10",
+      "consumed": 7097.53,
+      "realYield": 390,
+      "pvgisYield": 797.9580000000001,
+      "combinedYield": 1187.958,
+      "delta": 5909.572,
+      "combinedAutoconsumo": 1068.2643,
+      "combinedImmissione": 119.69370000000004
+    },
+    {
+      "date": "2025-09-11",
+      "consumed": 6710.29,
+      "realYield": 957.5,
+      "pvgisYield": 747.804,
+      "combinedYield": 1705.304,
+      "delta": 5004.986,
+      "combinedAutoconsumo": 1593.1334,
+      "combinedImmissione": 112.17060000000015
+    },
+    {
+      "date": "2025-09-12",
+      "consumed": 6421.7,
+      "realYield": 676.6,
+      "pvgisYield": 850.4005,
+      "combinedYield": 1527.0005,
+      "delta": 4894.6995,
+      "combinedAutoconsumo": 1399.440425,
+      "combinedImmissione": 127.5600750000001
+    },
+    {
+      "date": "2025-09-13",
+      "consumed": 3292.24,
+      "realYield": 806.6,
+      "pvgisYield": 796.6179999999999,
+      "combinedYield": 1603.2179999999998,
+      "delta": 1689.022,
+      "combinedAutoconsumo": 1067.4162999999999,
+      "combinedImmissione": 535.8017
+    },
+    {
+      "date": "2025-09-14",
+      "consumed": 2744.94,
+      "realYield": 501,
+      "pvgisYield": 790.0880000000001,
+      "combinedYield": 1291.0880000000002,
+      "delta": 1453.8519999999999,
+      "combinedAutoconsumo": 767.5108,
+      "combinedImmissione": 523.5772000000002
+    },
+    {
+      "date": "2025-09-15",
+      "consumed": 6832.16,
+      "realYield": 906.8,
+      "pvgisYield": 715.7080000000001,
+      "combinedYield": 1622.508,
+      "delta": 5209.652,
+      "combinedAutoconsumo": 1515.1518,
+      "combinedImmissione": 107.35619999999994
+    },
+    {
+      "date": "2025-09-16",
+      "consumed": 7062.84,
+      "realYield": 973.4,
+      "pvgisYield": 673.197,
+      "combinedYield": 1646.597,
+      "delta": 5416.243,
+      "combinedAutoconsumo": 1545.61745,
+      "combinedImmissione": 100.97955000000002
+    },
+    {
+      "date": "2025-09-17",
+      "consumed": 6407.63,
+      "realYield": 948.4,
+      "pvgisYield": 696.1469999999999,
+      "combinedYield": 1644.547,
+      "delta": 4763.0830000000005,
+      "combinedAutoconsumo": 1540.12495,
+      "combinedImmissione": 104.42205000000013
+    },
+    {
+      "date": "2025-09-18",
+      "consumed": 7230.88,
+      "realYield": 986.5,
+      "pvgisYield": 779.6465,
+      "combinedYield": 1766.1464999999998,
+      "delta": 5464.7335,
+      "combinedAutoconsumo": 1649.199525,
+      "combinedImmissione": 116.94697499999984
+    },
+    {
+      "date": "2025-09-19",
+      "consumed": 7710.79,
+      "realYield": 972.3,
+      "pvgisYield": 680.3425,
+      "combinedYield": 1652.6425,
+      "delta": 6058.1475,
+      "combinedAutoconsumo": 1550.591125,
+      "combinedImmissione": 102.05137500000001
+    },
+    {
+      "date": "2025-09-20",
+      "consumed": 3995.16,
+      "realYield": 894.3,
+      "pvgisYield": 597.655,
+      "combinedYield": 1491.955,
+      "delta": 2503.205,
+      "combinedAutoconsumo": 1083.9792499999999,
+      "combinedImmissione": 407.97575000000006
+    },
+    {
+      "date": "2025-09-21",
+      "consumed": 1844.08,
+      "realYield": 551.5,
+      "pvgisYield": 558.8910000000001,
+      "combinedYield": 1110.391,
+      "delta": 733.6889999999999,
+      "combinedAutoconsumo": 738.19185,
+      "combinedImmissione": 372.19915000000003
+    },
+    {
+      "date": "2025-09-22",
+      "consumed": 6975.15,
+      "realYield": 662.1,
+      "pvgisYield": 636.864,
+      "combinedYield": 1298.964,
+      "delta": 5676.186,
+      "combinedAutoconsumo": 1203.4344,
+      "combinedImmissione": 95.52959999999985
+    },
+    {
+      "date": "2025-09-23",
+      "consumed": 4160.18,
+      "realYield": 496.6,
+      "pvgisYield": 626.6415,
+      "combinedYield": 1123.2415,
+      "delta": 3036.9385,
+      "combinedAutoconsumo": 1029.245275,
+      "combinedImmissione": 93.9962250000001
+    },
+    {
+      "date": "2025-09-24",
+      "consumed": 5588.31,
+      "realYield": 590.5,
+      "pvgisYield": 606.5685,
+      "combinedYield": 1197.0684999999999,
+      "delta": 4391.2415,
+      "combinedAutoconsumo": 1105.943225,
+      "combinedImmissione": 91.12527499999987
+    },
+    {
+      "date": "2025-09-25",
+      "consumed": 5665.89,
+      "realYield": 561.8,
+      "pvgisYield": 547.796,
+      "combinedYield": 1109.596,
+      "delta": 4556.294,
+      "combinedAutoconsumo": 1027.4266,
+      "combinedImmissione": 82.1694
+    },
+    {
+      "date": "2025-09-26",
+      "consumed": 5363.13,
+      "realYield": 747.8,
+      "pvgisYield": 452.60249999999996,
+      "combinedYield": 1200.4025,
+      "delta": 4162.7275,
+      "combinedAutoconsumo": 1132.512125,
+      "combinedImmissione": 67.89037499999995
+    },
+    {
+      "date": "2025-09-27",
+      "consumed": 3006.67,
+      "realYield": 637.9,
+      "pvgisYield": 438.21450000000004,
+      "combinedYield": 1076.1145000000001,
+      "delta": 1930.5555,
+      "combinedAutoconsumo": 772.535075,
+      "combinedImmissione": 303.5794250000001
+    },
+    {
+      "date": "2025-09-28",
+      "consumed": 2175.76,
+      "realYield": 498.7,
+      "pvgisYield": 608.6659999999999,
+      "combinedYield": 1107.366,
+      "delta": 1068.3940000000002,
+      "combinedAutoconsumo": 700.4730999999999,
+      "combinedImmissione": 406.89290000000005
+    },
+    {
+      "date": "2025-09-29",
+      "consumed": 3552.96,
+      "realYield": 588.9,
+      "pvgisYield": 689.415,
+      "combinedYield": 1278.315,
+      "delta": 2274.645,
+      "combinedAutoconsumo": 1169.94275,
+      "combinedImmissione": 108.37225000000012
+    },
+    {
+      "date": "2025-09-30",
+      "consumed": 3805.85,
+      "realYield": 745.2,
+      "pvgisYield": 628.2874999999999,
+      "combinedYield": 1373.4875,
+      "delta": 2432.3625,
+      "combinedAutoconsumo": 902.884375,
+      "combinedImmissione": 470.603125
+    },
+    {
+      "date": "2025-10-01",
+      "consumed": 5398.61,
+      "realYield": 846.3,
+      "pvgisYield": 688.4095,
+      "combinedYield": 1534.7095,
+      "delta": 3863.9004999999997,
+      "combinedAutoconsumo": 1431.4480749999998,
+      "combinedImmissione": 103.26142500000014
+    },
+    {
+      "date": "2025-10-02",
+      "consumed": 3499.53,
+      "realYield": 1007,
+      "pvgisYield": 580.8725,
+      "combinedYield": 1587.8725,
+      "delta": 1911.6575000000003,
+      "combinedAutoconsumo": 1500.7416249999999,
+      "combinedImmissione": 87.13087500000006
+    },
+    {
+      "date": "2025-10-03",
+      "consumed": 3738,
+      "realYield": 1036.5,
+      "pvgisYield": 524.4355,
+      "combinedYield": 1560.9355,
+      "delta": 2177.0645,
+      "combinedAutoconsumo": 1482.270175,
+      "combinedImmissione": 78.66532499999994
+    },
+    {
+      "date": "2025-10-04",
+      "consumed": 2499.39,
+      "realYield": 937.9,
+      "pvgisYield": 663.73,
+      "combinedYield": 1601.63,
+      "delta": 897.7599999999998,
+      "combinedAutoconsumo": 1170.2055,
+      "combinedImmissione": 431.4245000000001
+    },
+    {
+      "date": "2025-10-05",
+      "consumed": 2277.73,
+      "realYield": 264.2,
+      "pvgisYield": 568.0095,
+      "combinedYield": 832.2094999999999,
+      "delta": 1445.5205,
+      "combinedAutoconsumo": 463.003325,
+      "combinedImmissione": 369.2061749999999
+    },
+    {
+      "date": "2025-10-06",
+      "consumed": 4858.71,
+      "realYield": 932.5,
+      "pvgisYield": 593.6034999999999,
+      "combinedYield": 1526.1035,
+      "delta": 3332.6065,
+      "combinedAutoconsumo": 1437.0629749999998,
+      "combinedImmissione": 89.04052500000012
+    },
+    {
+      "date": "2025-10-07",
+      "consumed": 4966.66,
+      "realYield": 1198.3,
+      "pvgisYield": 540.7855,
+      "combinedYield": 1739.0855,
+      "delta": 3227.5744999999997,
+      "combinedAutoconsumo": 1657.9676749999999,
+      "combinedImmissione": 81.11782500000004
+    },
+    {
+      "date": "2025-10-08",
+      "consumed": 5939.91,
+      "realYield": 1154.2,
+      "pvgisYield": 561.831,
+      "combinedYield": 1716.031,
+      "delta": 4223.879,
+      "combinedAutoconsumo": 1631.75635,
+      "combinedImmissione": 84.27464999999984
+    },
+    {
+      "date": "2025-10-09",
+      "consumed": 6279.78,
+      "realYield": 984.4,
+      "pvgisYield": 604.2385,
+      "combinedYield": 1588.6385,
+      "delta": 4691.1415,
+      "combinedAutoconsumo": 1498.002725,
+      "combinedImmissione": 90.63577499999997
+    },
+    {
+      "date": "2025-10-10",
+      "consumed": 6698.63,
+      "realYield": 1054.7,
+      "pvgisYield": 628.1155,
+      "combinedYield": 1682.8155000000002,
+      "delta": 5015.8145,
+      "combinedAutoconsumo": 1588.598175,
+      "combinedImmissione": 94.21732500000007
+    },
+    {
+      "date": "2025-10-11",
+      "consumed": 4670.13,
+      "realYield": 1082.6,
+      "pvgisYield": 439.053,
+      "combinedYield": 1521.6529999999998,
+      "delta": 3148.4770000000003,
+      "combinedAutoconsumo": 1236.2685499999998,
+      "combinedImmissione": 285.38445
+    },
+    {
+      "date": "2025-10-12",
+      "consumed": 2572.84,
+      "realYield": 892.6,
+      "pvgisYield": 472.3145,
+      "combinedYield": 1364.9145,
+      "delta": 1207.9255,
+      "combinedAutoconsumo": 1057.910075,
+      "combinedImmissione": 307.0044250000001
+    },
+    {
+      "date": "2025-10-13",
+      "consumed": 5587.51,
+      "realYield": 1039.6,
+      "pvgisYield": 540.6229999999999,
+      "combinedYield": 1580.223,
+      "delta": 4007.2870000000003,
+      "combinedAutoconsumo": 1499.1295499999999,
+      "combinedImmissione": 81.09345000000008
+    },
+    {
+      "date": "2025-10-14",
+      "consumed": 6267.06,
+      "realYield": 827.7,
+      "pvgisYield": 558.0405,
+      "combinedYield": 1385.7404999999999,
+      "delta": 4881.3195000000005,
+      "combinedAutoconsumo": 1302.034425,
+      "combinedImmissione": 83.70607499999983
+    },
+    {
+      "date": "2025-10-15",
+      "consumed": 6341.08,
+      "realYield": 847.7,
+      "pvgisYield": 584.7295,
+      "combinedYield": 1432.4295000000002,
+      "delta": 4908.6505,
+      "combinedAutoconsumo": 1344.7200750000002,
+      "combinedImmissione": 87.70942500000001
+    },
+    {
+      "date": "2025-10-16",
+      "consumed": 31523.9,
+      "realYield": 729.6,
+      "pvgisYield": 471.472,
+      "combinedYield": 1201.0720000000001,
+      "delta": 30322.828,
+      "combinedAutoconsumo": 1091.9112,
+      "combinedImmissione": 109.16080000000011
+    },
+    {
+      "date": "2025-10-17",
+      "consumed": 5404.84,
+      "realYield": 552.8,
+      "pvgisYield": 593.7729999999999,
+      "combinedYield": 1146.5729999999999,
+      "delta": 4258.267,
+      "combinedAutoconsumo": 1054.04705,
+      "combinedImmissione": 92.52594999999997
+    },
+    {
+      "date": "2025-10-18",
+      "consumed": 2901.79,
+      "realYield": 627.6,
+      "pvgisYield": 526.509,
+      "combinedYield": 1154.109,
+      "delta": 1747.681,
+      "combinedAutoconsumo": 776.81815,
+      "combinedImmissione": 377.29085
+    },
+    {
+      "date": "2025-10-19",
+      "consumed": 2416.29,
+      "realYield": 597,
+      "pvgisYield": 588.824,
+      "combinedYield": 1185.824,
+      "delta": 1230.466,
+      "combinedAutoconsumo": 754.2284,
+      "combinedImmissione": 431.5956000000001
+    },
+    {
+      "date": "2025-10-20",
+      "consumed": 3825.06,
+      "realYield": 648.1,
+      "pvgisYield": 505.6275,
+      "combinedYield": 1153.7275,
+      "delta": 2671.3325,
+      "combinedAutoconsumo": 1075.643375,
+      "combinedImmissione": 78.08412499999986
+    },
+    {
+      "date": "2025-10-21",
+      "consumed": 6673.66,
+      "realYield": 430,
+      "pvgisYield": 451.32349999999997,
+      "combinedYield": 881.3235,
+      "delta": 5792.336499999999,
+      "combinedAutoconsumo": 813.624975,
+      "combinedImmissione": 67.69852500000002
+    },
+    {
+      "date": "2025-10-22",
+      "consumed": 6424.11,
+      "realYield": 500.6,
+      "pvgisYield": 436.5725,
+      "combinedYield": 937.1725,
+      "delta": 5486.9375,
+      "combinedAutoconsumo": 871.686625,
+      "combinedImmissione": 65.48587499999996
+    },
+    {
+      "date": "2025-10-23",
+      "consumed": 6454.32,
+      "realYield": 543.2,
+      "pvgisYield": 443.79949999999997,
+      "combinedYield": 986.9995,
+      "delta": 5467.3205,
+      "combinedAutoconsumo": 920.429575,
+      "combinedImmissione": 66.56992500000001
+    },
+    {
+      "date": "2025-10-24",
+      "consumed": 6013.28,
+      "realYield": 869.7,
+      "pvgisYield": 406.648,
+      "combinedYield": 1276.348,
+      "delta": 4736.932,
+      "combinedAutoconsumo": 1215.2508,
+      "combinedImmissione": 61.09719999999993
+    },
+    {
+      "date": "2025-10-25",
+      "consumed": 4916.68,
+      "realYield": 513,
+      "pvgisYield": 445.854,
+      "combinedYield": 958.854,
+      "delta": 3957.826,
+      "combinedAutoconsumo": 668.5889,
+      "combinedImmissione": 290.2651000000001
+    },
+    {
+      "date": "2025-10-26",
+      "consumed": 2809.26,
+      "realYield": 116.5,
+      "pvgisYield": 377.6545,
+      "combinedYield": 494.1545,
+      "delta": 2315.1055,
+      "combinedAutoconsumo": 248.199075,
+      "combinedImmissione": 245.955425
+    },
+    {
+      "date": "2025-10-27",
+      "consumed": 6059.49,
+      "realYield": 164.9,
+      "pvgisYield": 442.8035,
+      "combinedYield": 607.7035,
+      "delta": 5451.7865,
+      "combinedAutoconsumo": 541.282975,
+      "combinedImmissione": 66.420525
+    },
+    {
+      "date": "2025-10-28",
+      "consumed": 6245.14,
+      "realYield": 181.4,
+      "pvgisYield": 498.3195,
+      "combinedYield": 679.7195,
+      "delta": 5565.4205,
+      "combinedAutoconsumo": 604.971575,
+      "combinedImmissione": 74.74792500000001
+    },
+    {
+      "date": "2025-10-29",
+      "consumed": 6032.22,
+      "realYield": 163.6,
+      "pvgisYield": 506.02700000000004,
+      "combinedYield": 669.6270000000001,
+      "delta": 5362.593,
+      "combinedAutoconsumo": 593.72295,
+      "combinedImmissione": 75.9040500000001
+    },
+    {
+      "date": "2025-10-30",
+      "consumed": 5746.19,
+      "realYield": 107.6,
+      "pvgisYield": 487.68999999999994,
+      "combinedYield": 595.29,
+      "delta": 5150.9,
+      "combinedAutoconsumo": 522.1365,
+      "combinedImmissione": 73.15350000000001
+    },
+    {
+      "date": "2025-10-31",
+      "consumed": 4995.56,
+      "realYield": 161.1,
+      "pvgisYield": 427.69649999999996,
+      "combinedYield": 588.7964999999999,
+      "delta": 4406.763500000001,
+      "combinedAutoconsumo": 524.642025,
+      "combinedImmissione": 64.15447499999993
+    },
+    {
+      "date": "2025-11-01",
+      "consumed": 2543.52,
+      "realYield": 197.9,
+      "pvgisYield": 314.40999999999997,
+      "combinedYield": 512.31,
+      "delta": 2031.21,
+      "combinedAutoconsumo": 306.7235,
+      "combinedImmissione": 205.58649999999994
+    },
+    {
+      "date": "2025-11-02",
+      "consumed": 2517.71,
+      "realYield": 168,
+      "pvgisYield": 380.37350000000004,
+      "combinedYield": 548.3735,
+      "delta": 1969.3365,
+      "combinedAutoconsumo": 300.290725,
+      "combinedImmissione": 248.08277500000003
+    },
+    {
+      "date": "2025-11-03",
+      "consumed": 2387,
+      "realYield": 216.5,
+      "pvgisYield": 336.78999999999996,
+      "combinedYield": 553.29,
+      "delta": 1833.71,
+      "combinedAutoconsumo": 502.77149999999995,
+      "combinedImmissione": 50.51850000000002
+    },
+    {
+      "date": "2025-11-04",
+      "consumed": 3169.7,
+      "realYield": 230.4,
+      "pvgisYield": 314.21,
+      "combinedYield": 544.61,
+      "delta": 2625.0899999999997,
+      "combinedAutoconsumo": 497.47849999999994,
+      "combinedImmissione": 47.131500000000074
+    },
+    {
+      "date": "2025-11-05",
+      "consumed": 3370.65,
+      "realYield": 223.7,
+      "pvgisYield": 284.858,
+      "combinedYield": 508.558,
+      "delta": 2862.092,
+      "combinedAutoconsumo": 465.8293,
+      "combinedImmissione": 42.7287
+    },
+    {
+      "date": "2025-11-06",
+      "consumed": 3593.68,
+      "realYield": 212.4,
+      "pvgisYield": 410.37149999999997,
+      "combinedYield": 622.7715,
+      "delta": 2970.9085,
+      "combinedAutoconsumo": 561.215775,
+      "combinedImmissione": 61.55572499999994
+    },
+    {
+      "date": "2025-11-07",
+      "consumed": 3495.17,
+      "realYield": 122.8,
+      "pvgisYield": 388.99649999999997,
+      "combinedYield": 511.7965,
+      "delta": 2983.3735,
+      "combinedAutoconsumo": 453.447025,
+      "combinedImmissione": 58.349474999999984
+    },
+    {
+      "date": "2025-11-08",
+      "consumed": 1880.9,
+      "realYield": 189.6,
+      "pvgisYield": 425.178,
+      "combinedYield": 614.778,
+      "delta": 1266.122,
+      "combinedAutoconsumo": 338.41229999999996,
+      "combinedImmissione": 276.36570000000006
+    },
+    {
+      "date": "2025-11-09",
+      "consumed": 1443.7,
+      "realYield": 192.7,
+      "pvgisYield": 400.57449999999994,
+      "combinedYield": 593.2745,
+      "delta": 850.4255,
+      "combinedAutoconsumo": 332.8510749999999,
+      "combinedImmissione": 260.42342500000007
+    },
+    {
+      "date": "2025-11-10",
+      "consumed": 2903.79,
+      "realYield": 203.6,
+      "pvgisYield": 349.63149999999996,
+      "combinedYield": 553.2315,
+      "delta": 2350.5585,
+      "combinedAutoconsumo": 500.7867749999999,
+      "combinedImmissione": 52.44472500000006
+    },
+    {
+      "date": "2025-11-11",
+      "consumed": 3242.44,
+      "realYield": 202,
+      "pvgisYield": 388.317,
+      "combinedYield": 590.317,
+      "delta": 2652.123,
+      "combinedAutoconsumo": 532.06945,
+      "combinedImmissione": 58.24755000000005
+    },
+    {
+      "date": "2025-11-12",
+      "consumed": 2781.69,
+      "realYield": 198.4,
+      "pvgisYield": 276.4925,
+      "combinedYield": 474.89250000000004,
+      "delta": 2306.7975,
+      "combinedAutoconsumo": 433.418625,
+      "combinedImmissione": 41.47387500000002
+    },
+    {
+      "date": "2025-11-13",
+      "consumed": 3226.91,
+      "realYield": 194.8,
+      "pvgisYield": 437.60049999999995,
+      "combinedYield": 632.4005,
+      "delta": 2594.5095,
+      "combinedAutoconsumo": 566.7604249999999,
+      "combinedImmissione": 65.64007500000002
+    },
+    {
+      "date": "2025-11-14",
+      "consumed": 3495.96,
+      "realYield": 172.1,
+      "pvgisYield": 244.142,
+      "combinedYield": 416.24199999999996,
+      "delta": 3079.718,
+      "combinedAutoconsumo": 379.6207,
+      "combinedImmissione": 36.62129999999996
+    },
+    {
+      "date": "2025-11-15",
+      "consumed": 2702.34,
+      "realYield": 152.9,
+      "pvgisYield": 307.09049999999996,
+      "combinedYield": 459.9905,
+      "delta": 2242.3495000000003,
+      "combinedAutoconsumo": 260.381675,
+      "combinedImmissione": 199.60882500000002
+    },
+    {
+      "date": "2025-11-16",
+      "consumed": 1416.41,
+      "realYield": 140.2,
+      "pvgisYield": 202.80349999999999,
+      "combinedYield": 343.0035,
+      "delta": 1073.4065,
+      "combinedAutoconsumo": 211.18122499999998,
+      "combinedImmissione": 131.822275
+    },
+    {
+      "date": "2025-11-17",
+      "consumed": 3118.03,
+      "realYield": 122.8,
+      "pvgisYield": 335.6765,
+      "combinedYield": 458.4765,
+      "delta": 2659.5535,
+      "combinedAutoconsumo": 408.125025,
+      "combinedImmissione": 50.35147499999999
+    },
+    {
+      "date": "2025-11-18",
+      "consumed": 3125.09,
+      "realYield": 163.3,
+      "pvgisYield": 386.70799999999997,
+      "combinedYield": 550.008,
+      "delta": 2575.0820000000003,
+      "combinedAutoconsumo": 492.0018,
+      "combinedImmissione": 58.006200000000035
+    },
+    {
+      "date": "2025-11-19",
+      "consumed": 2917.44,
+      "realYield": 629.7,
+      "pvgisYield": 320.00350000000003,
+      "combinedYield": 949.7035000000001,
+      "delta": 1967.7365,
+      "combinedAutoconsumo": 901.192975,
+      "combinedImmissione": 48.51052500000003
+    },
+    {
+      "date": "2025-11-20",
+      "consumed": 3279.47,
+      "realYield": 380.2,
+      "pvgisYield": 259.264,
+      "combinedYield": 639.4639999999999,
+      "delta": 2640.006,
+      "combinedAutoconsumo": 600.5744,
+      "combinedImmissione": 38.88959999999997
+    },
+    {
+      "date": "2025-11-21",
+      "consumed": 7587.42,
+      "realYield": 5578.93,
+      "pvgisYield": 351.45450000000005,
+      "combinedYield": 5930.3845,
+      "delta": 1657.0355,
+      "combinedAutoconsumo": 5877.616325,
+      "combinedImmissione": 52.768175000000156
+    },
+    {
+      "date": "2025-11-22",
+      "consumed": 7280.65,
+      "realYield": 5584.53,
+      "pvgisYield": 269.382,
+      "combinedYield": 5853.911999999999,
+      "delta": 1426.7380000000003,
+      "combinedAutoconsumo": 5678.6237,
+      "combinedImmissione": 175.28829999999925
+    },
+    {
+      "date": "2025-11-23",
+      "consumed": 6325.9,
+      "realYield": 5350.33,
+      "pvgisYield": 358.02049999999997,
+      "combinedYield": 5708.3505,
+      "delta": 617.5495000000001,
+      "combinedAutoconsumo": 5454.4971749999995,
+      "combinedImmissione": 253.85332500000004
+    },
+    {
+      "date": "2025-11-24",
+      "consumed": 8537.65,
+      "realYield": 5345.93,
+      "pvgisYield": 349.3555,
+      "combinedYield": 5695.2855,
+      "delta": 2842.3644999999997,
+      "combinedAutoconsumo": 5642.882175000001,
+      "combinedImmissione": 52.40332499999931
+    },
+    {
+      "date": "2025-11-25",
+      "consumed": 8687.02,
+      "realYield": 5306.63,
+      "pvgisYield": 294.507,
+      "combinedYield": 5601.137,
+      "delta": 3085.8830000000007,
+      "combinedAutoconsumo": 5556.96095,
+      "combinedImmissione": 44.17605000000003
+    },
+    {
+      "date": "2025-11-26",
+      "consumed": 8345.97,
+      "realYield": 5504.03,
+      "pvgisYield": 284.2545,
+      "combinedYield": 5788.2845,
+      "delta": 2557.6854999999996,
+      "combinedAutoconsumo": 5745.646325,
+      "combinedImmissione": 42.63817500000005
+    },
+    {
+      "date": "2025-11-27",
+      "consumed": 1342.96,
+      "realYield": 245.2,
+      "pvgisYield": 298.72049999999996,
+      "combinedYield": 543.9205,
+      "delta": 799.0395000000001,
+      "combinedAutoconsumo": 498.83242499999994,
+      "combinedImmissione": 45.088075
+    },
+    {
+      "date": "2025-11-28",
+      "consumed": 4511.25,
+      "realYield": 0,
+      "pvgisYield": 217.43349999999998,
+      "combinedYield": 217.43349999999998,
+      "delta": 4293.8165,
+      "combinedAutoconsumo": 184.81847499999998,
+      "combinedImmissione": 32.615025
+    },
+    {
+      "date": "2026-01-13",
+      "consumed": 115886.79,
+      "realYield": 0,
+      "pvgisYield": 374.001,
+      "combinedYield": 374.001,
+      "delta": 115512.78899999999,
+      "combinedAutoconsumo": 317.90085,
+      "combinedImmissione": 56.100149999999985
+    },
+    {
+      "date": "2026-01-14",
+      "consumed": 3266.73,
+      "realYield": 520.5,
+      "pvgisYield": 391.91200000000003,
+      "combinedYield": 912.412,
+      "delta": 2354.318,
+      "combinedAutoconsumo": 853.6252,
+      "combinedImmissione": 58.786800000000085
+    },
+    {
+      "date": "2026-01-15",
+      "consumed": 3052.22,
+      "realYield": 474.5,
+      "pvgisYield": 308.3555,
+      "combinedYield": 782.8555,
+      "delta": 2269.3644999999997,
+      "combinedAutoconsumo": 736.602175,
+      "combinedImmissione": 46.25332500000002
+    },
+    {
+      "date": "2026-01-16",
+      "consumed": 3398.26,
+      "realYield": 620.7,
+      "pvgisYield": 365.5155,
+      "combinedYield": 986.2155,
+      "delta": 2412.0445,
+      "combinedAutoconsumo": 931.388175,
+      "combinedImmissione": 54.82732499999997
+    },
+    {
+      "date": "2026-01-17",
+      "consumed": 1672.99,
+      "realYield": 545.3,
+      "pvgisYield": 285.418,
+      "combinedYield": 830.718,
+      "delta": 842.272,
+      "combinedAutoconsumo": 638.4063,
+      "combinedImmissione": 192.31169999999997
+    },
+    {
+      "date": "2026-01-18",
+      "consumed": 1280.32,
+      "realYield": 279.5,
+      "pvgisYield": 312.86999999999995,
+      "combinedYield": 592.3699999999999,
+      "delta": 687.95,
+      "combinedAutoconsumo": 388.71449999999993,
+      "combinedImmissione": 203.65549999999996
+    },
+    {
+      "date": "2026-01-19",
+      "consumed": 3066.23,
+      "realYield": 362.2,
+      "pvgisYield": 384.08750000000003,
+      "combinedYield": 746.2875,
+      "delta": 2319.9425,
+      "combinedAutoconsumo": 688.674375,
+      "combinedImmissione": 57.61312499999997
+    },
+    {
+      "date": "2026-01-20",
+      "consumed": 3151.1,
+      "realYield": 625.8,
+      "pvgisYield": 181.454,
+      "combinedYield": 807.2539999999999,
+      "delta": 2343.846,
+      "combinedAutoconsumo": 780.0359,
+      "combinedImmissione": 27.218099999999936
+    },
+    {
+      "date": "2026-01-21",
+      "consumed": 2681.33,
+      "realYield": 218.2,
+      "pvgisYield": 362.983,
+      "combinedYield": 581.183,
+      "delta": 2100.147,
+      "combinedAutoconsumo": 526.73555,
+      "combinedImmissione": 54.44745
+    },
+    {
+      "date": "2026-01-22",
+      "consumed": 2992.24,
+      "realYield": 756.3,
+      "pvgisYield": 341.536,
+      "combinedYield": 1097.836,
+      "delta": 1894.4039999999998,
+      "combinedAutoconsumo": 1046.6055999999999,
+      "combinedImmissione": 51.230400000000145
+    },
+    {
+      "date": "2026-01-23",
+      "consumed": 2712.22,
+      "realYield": 690.3,
+      "pvgisYield": 353.10650000000004,
+      "combinedYield": 1043.4065,
+      "delta": 1668.8134999999997,
+      "combinedAutoconsumo": 990.440525,
+      "combinedImmissione": 52.96597500000007
+    },
+    {
+      "date": "2026-01-24",
+      "consumed": 1661.51,
+      "realYield": 317,
+      "pvgisYield": 327.175,
+      "combinedYield": 644.175,
+      "delta": 1017.335,
+      "combinedAutoconsumo": 429.78125,
+      "combinedImmissione": 214.39374999999995
+    },
+    {
+      "date": "2026-01-25",
+      "consumed": 1252.76,
+      "realYield": 246.6,
+      "pvgisYield": 307.6675,
+      "combinedYield": 554.2675,
+      "delta": 698.4925,
+      "combinedAutoconsumo": 353.72362499999997,
+      "combinedImmissione": 200.54387500000007
+    },
+    {
+      "date": "2026-01-26",
+      "consumed": 2886.49,
+      "realYield": 408.8,
+      "pvgisYield": 430.4535,
+      "combinedYield": 839.2535,
+      "delta": 2047.2364999999998,
+      "combinedAutoconsumo": 774.685475,
+      "combinedImmissione": 64.56802500000003
+    },
+    {
+      "date": "2026-01-27",
+      "consumed": 2700.73,
+      "realYield": 699.5,
+      "pvgisYield": 430.0835,
+      "combinedYield": 1129.5835,
+      "delta": 1571.1465,
+      "combinedAutoconsumo": 1065.020975,
+      "combinedImmissione": 64.56252500000005
+    },
+    {
+      "date": "2026-01-28",
+      "consumed": 2910,
+      "realYield": 140.3,
+      "pvgisYield": 262.27250000000004,
+      "combinedYield": 402.57250000000005,
+      "delta": 2507.4275,
+      "combinedAutoconsumo": 363.231625,
+      "combinedImmissione": 39.34087500000004
+    },
+    {
+      "date": "2026-01-29",
+      "consumed": 2679.16,
+      "realYield": 37,
+      "pvgisYield": 394.3155,
+      "combinedYield": 431.3155,
+      "delta": 2247.8444999999997,
+      "combinedAutoconsumo": 372.16817499999996,
+      "combinedImmissione": 59.14732500000002
+    },
+    {
+      "date": "2026-01-30",
+      "consumed": 2808.69,
+      "realYield": 28.4,
+      "pvgisYield": 467.596,
+      "combinedYield": 495.996,
+      "delta": 2312.694,
+      "combinedAutoconsumo": 425.85659999999996,
+      "combinedImmissione": 70.13940000000002
+    },
+    {
+      "date": "2026-01-31",
+      "consumed": 1512.97,
+      "realYield": 31.2,
+      "pvgisYield": 278.3505,
+      "combinedYield": 309.5505,
+      "delta": 1203.4195,
+      "combinedAutoconsumo": 128.622675,
+      "combinedImmissione": 180.927825
+    },
+    {
+      "date": "2026-02-01",
+      "consumed": 1196.74,
+      "realYield": 51.1,
+      "pvgisYield": 351.56600000000003,
+      "combinedYield": 402.66600000000005,
+      "delta": 794.074,
+      "combinedAutoconsumo": 174.1481,
+      "combinedImmissione": 228.51790000000005
+    },
+    {
+      "date": "2026-02-02",
+      "consumed": 2553.23,
+      "realYield": 50.8,
+      "pvgisYield": 426.534,
+      "combinedYield": 477.334,
+      "delta": 2075.896,
+      "combinedAutoconsumo": 413.3539,
+      "combinedImmissione": 63.98009999999999
+    },
+    {
+      "date": "2026-02-03",
+      "consumed": 2896.56,
+      "realYield": 12,
+      "pvgisYield": 420.58799999999997,
+      "combinedYield": 432.58799999999997,
+      "delta": 2463.9719999999998,
+      "combinedAutoconsumo": 369.49979999999994,
+      "combinedImmissione": 63.08820000000003
+    },
+    {
+      "date": "2026-02-04",
+      "consumed": 2548.79,
+      "realYield": 10.3,
+      "pvgisYield": 382.935,
+      "combinedYield": 393.235,
+      "delta": 2155.555,
+      "combinedAutoconsumo": 335.79475,
+      "combinedImmissione": 57.44024999999999
+    },
+    {
+      "date": "2026-02-05",
+      "consumed": 2135.78,
+      "realYield": 43.2,
+      "pvgisYield": 489.63149999999996,
+      "combinedYield": 532.8315,
+      "delta": 1602.9485000000002,
+      "combinedAutoconsumo": 459.38677499999994,
+      "combinedImmissione": 73.44472500000006
+    },
+    {
+      "date": "2026-02-06",
+      "consumed": 2052.81,
+      "realYield": 49,
+      "pvgisYield": 522.3195000000001,
+      "combinedYield": 571.3195000000001,
+      "delta": 1481.4904999999999,
+      "combinedAutoconsumo": 492.97157500000003,
+      "combinedImmissione": 78.34792500000003
+    },
+    {
+      "date": "2026-02-07",
+      "consumed": 1020.45,
+      "realYield": 25.8,
+      "pvgisYield": 417.1965,
+      "combinedYield": 442.9965,
+      "delta": 577.4535000000001,
+      "combinedAutoconsumo": 171.81877500000002,
+      "combinedImmissione": 271.177725
+    },
+    {
+      "date": "2026-02-08",
+      "consumed": 864.86,
+      "realYield": 32.5,
+      "pvgisYield": 480.947,
+      "combinedYield": 513.447,
+      "delta": 351.413,
+      "combinedAutoconsumo": 200.83145,
+      "combinedImmissione": 312.61555
+    },
+    {
+      "date": "2026-02-09",
+      "consumed": 1784.56,
+      "realYield": 34,
+      "pvgisYield": 438.4334999999999,
+      "combinedYield": 472.4334999999999,
+      "delta": 1312.1265,
+      "combinedAutoconsumo": 406.66847499999994,
+      "combinedImmissione": 65.76502499999998
+    },
+    {
+      "date": "2026-02-10",
+      "consumed": 2048.49,
+      "realYield": 35,
+      "pvgisYield": 336.84299999999996,
+      "combinedYield": 371.84299999999996,
+      "delta": 1676.647,
+      "combinedAutoconsumo": 321.31654999999995,
+      "combinedImmissione": 50.52645000000001
+    },
+    {
+      "date": "2026-02-11",
+      "consumed": 2122.7,
+      "realYield": 25.7,
+      "pvgisYield": 546.394,
+      "combinedYield": 572.094,
+      "delta": 1550.6059999999998,
+      "combinedAutoconsumo": 490.13489999999996,
+      "combinedImmissione": 81.95910000000009
+    },
+    {
+      "date": "2026-02-12",
+      "consumed": 2024.83,
+      "realYield": 25.5,
+      "pvgisYield": 487.5495,
+      "combinedYield": 513.0495000000001,
+      "delta": 1511.7804999999998,
+      "combinedAutoconsumo": 439.917075,
+      "combinedImmissione": 73.13242500000007
+    },
+    {
+      "date": "2026-02-13",
+      "consumed": 2009.08,
+      "realYield": 54.3,
+      "pvgisYield": 479.8355,
+      "combinedYield": 534.1355,
+      "delta": 1474.9445,
+      "combinedAutoconsumo": 462.16017500000004,
+      "combinedImmissione": 71.97532499999994
+    },
+    {
+      "date": "2026-02-14",
+      "consumed": 1048.88,
+      "realYield": 38,
+      "pvgisYield": 534.5925,
+      "combinedYield": 572.5925,
+      "delta": 476.28750000000014,
+      "combinedAutoconsumo": 225.107375,
+      "combinedImmissione": 347.485125
+    },
+    {
+      "date": "2026-02-15",
+      "consumed": 927.42,
+      "realYield": 59.1,
+      "pvgisYield": 545.0124999999999,
+      "combinedYield": 604.1125,
+      "delta": 323.3075,
+      "combinedAutoconsumo": 249.85437499999995,
+      "combinedImmissione": 354.258125
+    },
+    {
+      "date": "2026-02-16",
+      "consumed": 2054.66,
+      "realYield": 42.6,
+      "pvgisYield": 444.48350000000005,
+      "combinedYield": 487.0835000000001,
+      "delta": 1567.5764999999997,
+      "combinedAutoconsumo": 420.41097500000006,
+      "combinedImmissione": 66.67252500000001
+    },
+    {
+      "date": "2026-02-17",
+      "consumed": 2003.52,
+      "realYield": 63.9,
+      "pvgisYield": 502.51149999999996,
+      "combinedYield": 566.4114999999999,
+      "delta": 1437.1085,
+      "combinedAutoconsumo": 491.0347749999999,
+      "combinedImmissione": 75.37672500000002
+    },
+    {
+      "date": "2026-02-18",
+      "consumed": 1917.96,
+      "realYield": 121.7,
+      "pvgisYield": 485.38,
+      "combinedYield": 607.08,
+      "delta": 1310.88,
+      "combinedAutoconsumo": 534.273,
+      "combinedImmissione": 72.80700000000002
+    },
+    {
+      "date": "2026-02-19",
+      "consumed": 2296.56,
+      "realYield": 493.9,
+      "pvgisYield": 415.918,
+      "combinedYield": 909.818,
+      "delta": 1386.742,
+      "combinedAutoconsumo": 845.9303,
+      "combinedImmissione": 63.887699999999995
+    },
+    {
+      "date": "2026-02-20",
+      "consumed": 2986.8,
+      "realYield": 224.6,
+      "pvgisYield": 584.2280000000001,
+      "combinedYield": 808.8280000000001,
+      "delta": 2177.972,
+      "combinedAutoconsumo": 721.1938,
+      "combinedImmissione": 87.63420000000008
+    },
+    {
+      "date": "2026-02-21",
+      "consumed": 2505.87,
+      "realYield": 283.6,
+      "pvgisYield": 470.6855,
+      "combinedYield": 754.2855,
+      "delta": 1751.5845,
+      "combinedAutoconsumo": 448.339925,
+      "combinedImmissione": 305.94557499999996
+    },
+    {
+      "date": "2026-02-22",
+      "consumed": 1301.75,
+      "realYield": 222.9,
+      "pvgisYield": 638.5715,
+      "combinedYield": 861.4715,
+      "delta": 440.2785,
+      "combinedAutoconsumo": 446.400025,
+      "combinedImmissione": 415.07147499999996
+    },
+    {
+      "date": "2026-02-23",
+      "consumed": 2963.27,
+      "realYield": 212.2,
+      "pvgisYield": 608.6185,
+      "combinedYield": 820.8185000000001,
+      "delta": 2142.4515,
+      "combinedAutoconsumo": 729.525725,
+      "combinedImmissione": 91.29277500000012
+    },
+    {
+      "date": "2026-02-24",
+      "consumed": 3198.65,
+      "realYield": 243.1,
+      "pvgisYield": 630.2525,
+      "combinedYield": 873.3525000000001,
+      "delta": 2325.2975,
+      "combinedAutoconsumo": 778.8146250000001,
+      "combinedImmissione": 94.53787499999999
+    },
+    {
+      "date": "2026-02-25",
+      "consumed": 3061.48,
+      "realYield": 993.9,
+      "pvgisYield": 530.6125000000001,
+      "combinedYield": 1524.5125,
+      "delta": 1536.9675,
+      "combinedAutoconsumo": 1444.920625,
+      "combinedImmissione": 79.59187500000007
+    },
+    {
+      "date": "2026-02-26",
+      "consumed": 2786.63,
+      "realYield": 1196.9,
+      "pvgisYield": 462.44499999999994,
+      "combinedYield": 1659.345,
+      "delta": 1127.285,
+      "combinedAutoconsumo": 1588.05825,
+      "combinedImmissione": 71.28674999999998
+    },
+    {
+      "date": "2026-02-27",
+      "consumed": 2556.74,
+      "realYield": 791.9,
+      "pvgisYield": 511.9055,
+      "combinedYield": 1303.8055,
+      "delta": 1252.9344999999998,
+      "combinedAutoconsumo": 1226.829675,
+      "combinedImmissione": 76.97582499999999
+    },
+    {
+      "date": "2026-02-28",
+      "consumed": 1522.44,
+      "realYield": 575,
+      "pvgisYield": 630.3105,
+      "combinedYield": 1205.3105,
+      "delta": 317.1295,
+      "combinedAutoconsumo": 776.4886750000001,
+      "combinedImmissione": 428.821825
+    },
+    {
+      "date": "2026-03-01",
+      "consumed": 1314.47,
+      "realYield": 395,
+      "pvgisYield": 517.0965,
+      "combinedYield": 912.0965,
+      "delta": 402.37350000000004,
+      "combinedAutoconsumo": 569.793775,
+      "combinedImmissione": 342.302725
+    },
+    {
+      "date": "2026-03-02",
+      "consumed": 2199.84,
+      "realYield": 488.8,
+      "pvgisYield": 540.135,
+      "combinedYield": 1028.935,
+      "delta": 1170.9050000000002,
+      "combinedAutoconsumo": 947.9147499999999,
+      "combinedImmissione": 81.02025000000003
+    },
+    {
+      "date": "2026-03-03",
+      "consumed": 3104.11,
+      "realYield": 1087,
+      "pvgisYield": 506.0165,
+      "combinedYield": 1593.0165,
+      "delta": 1511.0935000000002,
+      "combinedAutoconsumo": 1516.784025,
+      "combinedImmissione": 76.23247500000002
+    },
+    {
+      "date": "2026-03-04",
+      "consumed": 3093.71,
+      "realYield": 601.3,
+      "pvgisYield": 660.0095,
+      "combinedYield": 1261.3094999999998,
+      "delta": 1832.4005000000002,
+      "combinedAutoconsumo": 1162.308075,
+      "combinedImmissione": 99.00142499999993
+    },
+    {
+      "date": "2026-03-05",
+      "consumed": 3438.19,
+      "realYield": 1315.6,
+      "pvgisYield": 619.547,
+      "combinedYield": 1935.147,
+      "delta": 1503.0430000000001,
+      "combinedAutoconsumo": 1841.98495,
+      "combinedImmissione": 93.16204999999991
+    },
+    {
+      "date": "2026-03-06",
+      "consumed": 3082.8,
+      "realYield": 847.5,
+      "pvgisYield": 543.7755,
+      "combinedYield": 1391.2755,
+      "delta": 1691.5245000000002,
+      "combinedAutoconsumo": 1309.709175,
+      "combinedImmissione": 81.566325
+    },
+    {
+      "date": "2026-03-07",
+      "consumed": 2627.7,
+      "realYield": 788.5,
+      "pvgisYield": 485.17299999999994,
+      "combinedYield": 1273.673,
+      "delta": 1354.0269999999998,
+      "combinedAutoconsumo": 958.3105499999999,
+      "combinedImmissione": 315.3624500000001
+    },
+    {
+      "date": "2026-03-08",
+      "consumed": 1359.9,
+      "realYield": 470.8,
+      "pvgisYield": 560.034,
+      "combinedYield": 1030.834,
+      "delta": 329.06600000000003,
+      "combinedAutoconsumo": 659.6319,
+      "combinedImmissione": 371.2021000000001
+    },
+    {
+      "date": "2026-03-09",
+      "consumed": 2757.97,
+      "realYield": 733.3,
+      "pvgisYield": 503.939,
+      "combinedYield": 1237.239,
+      "delta": 1520.7309999999998,
+      "combinedAutoconsumo": 1161.22815,
+      "combinedImmissione": 76.01085000000012
+    },
+    {
+      "date": "2026-03-10",
+      "consumed": 2873.78,
+      "realYield": 1284.3,
+      "pvgisYield": 710.1229999999999,
+      "combinedYield": 1994.4229999999998,
+      "delta": 879.3570000000004,
+      "combinedAutoconsumo": 1887.39455,
+      "combinedImmissione": 107.0284499999998
+    },
+    {
+      "date": "2026-03-11",
+      "consumed": 2664.86,
+      "realYield": 1061.6,
+      "pvgisYield": 684.5870000000001,
+      "combinedYield": 1746.187,
+      "delta": 918.6730000000002,
+      "combinedAutoconsumo": 1641.4789500000002,
+      "combinedImmissione": 104.70804999999973
+    },
+    {
+      "date": "2026-03-12",
+      "consumed": 2718.06,
+      "realYield": 277.1,
+      "pvgisYield": 609.9440000000001,
+      "combinedYield": 887.0440000000001,
+      "delta": 1831.0159999999998,
+      "combinedAutoconsumo": 795.5524,
+      "combinedImmissione": 91.49160000000006
+    },
+    {
+      "date": "2026-03-13",
+      "consumed": 2678.52,
+      "realYield": 1039.2,
+      "pvgisYield": 678.7284999999999,
+      "combinedYield": 1717.9285,
+      "delta": 960.5915,
+      "combinedAutoconsumo": 1610.6792249999999,
+      "combinedImmissione": 107.24927500000013
+    },
+    {
+      "date": "2026-03-14",
+      "consumed": 1435.7,
+      "realYield": 638.1,
+      "pvgisYield": 429.45950000000005,
+      "combinedYield": 1067.5595,
+      "delta": 368.1405,
+      "combinedAutoconsumo": 769.200825,
+      "combinedImmissione": 298.35867500000006
+    },
+    {
+      "date": "2026-03-15",
+      "consumed": 1327.72,
+      "realYield": 492.1,
+      "pvgisYield": 790.1714999999999,
+      "combinedYield": 1282.2714999999998,
+      "delta": 45.448500000000195,
+      "combinedAutoconsumo": 762.460025,
+      "combinedImmissione": 519.8114749999999
+    },
+    {
+      "date": "2026-03-16",
+      "consumed": 2863.52,
+      "realYield": 1144.5,
+      "pvgisYield": 754.4164999999999,
+      "combinedYield": 1898.9164999999998,
+      "delta": 964.6035000000002,
+      "combinedAutoconsumo": 1784.964025,
+      "combinedImmissione": 113.95247499999982
+    },
+    {
+      "date": "2026-03-17",
+      "consumed": 3517.91,
+      "realYield": 1224.7,
+      "pvgisYield": 658.7005,
+      "combinedYield": 1883.4005000000002,
+      "delta": 1634.5094999999997,
+      "combinedAutoconsumo": 1784.175425,
+      "combinedImmissione": 99.22507500000029
+    },
+    {
+      "date": "2026-03-18",
+      "consumed": 3449.8,
+      "realYield": 1343.6,
+      "pvgisYield": 738.767,
+      "combinedYield": 2082.367,
+      "delta": 1367.433,
+      "combinedAutoconsumo": 1970.80195,
+      "combinedImmissione": 111.56505000000016
+    },
+    {
+      "date": "2026-03-19",
+      "consumed": 3467,
+      "realYield": 1204.6,
+      "pvgisYield": 578.0875,
+      "combinedYield": 1782.6875,
+      "delta": 1684.3125,
+      "combinedAutoconsumo": 1695.7843749999997,
+      "combinedImmissione": 86.90312500000027
+    },
+    {
+      "date": "2026-03-20",
+      "consumed": 2748.03,
+      "realYield": 1228.9,
+      "pvgisYield": 620.0409999999999,
+      "combinedYield": 1848.941,
+      "delta": 899.0890000000002,
+      "combinedAutoconsumo": 1755.51485,
+      "combinedImmissione": 93.42615
+    },
+    {
+      "date": "2026-03-21",
+      "consumed": 1425.93,
+      "realYield": 542.9,
+      "pvgisYield": 784.2125,
+      "combinedYield": 1327.1125,
+      "delta": 98.81750000000011,
+      "combinedAutoconsumo": 812.214375,
+      "combinedImmissione": 514.8981249999999
+    },
+    {
+      "date": "2026-03-22",
+      "consumed": 1330.55,
+      "realYield": 531.1,
+      "pvgisYield": 773.58,
+      "combinedYield": 1304.68,
+      "delta": 25.86999999999989,
+      "combinedAutoconsumo": 782.5830000000001,
+      "combinedImmissione": 522.097
+    },
+    {
+      "date": "2026-03-23",
+      "consumed": 2720.58,
+      "realYield": 1043,
+      "pvgisYield": 943.0999999999999,
+      "combinedYield": 1986.1,
+      "delta": 734.48,
+      "combinedAutoconsumo": 1844.355,
+      "combinedImmissione": 141.7449999999999
+    },
+    {
+      "date": "2026-03-24",
+      "consumed": 3183.08,
+      "realYield": 1173.9,
+      "pvgisYield": 921.2455,
+      "combinedYield": 2095.1455,
+      "delta": 1087.9344999999998,
+      "combinedAutoconsumo": 1956.818675,
+      "combinedImmissione": 138.3268250000001
+    },
+    {
+      "date": "2026-03-25",
+      "consumed": 2887.6,
+      "realYield": 1190.1,
+      "pvgisYield": 884.7235000000001,
+      "combinedYield": 2074.8235,
+      "delta": 812.7764999999999,
+      "combinedAutoconsumo": 1941.6949749999999,
+      "combinedImmissione": 133.12852500000008
+    },
+    {
+      "date": "2026-03-26",
+      "consumed": 2969.57,
+      "realYield": 43.4,
+      "pvgisYield": 650.8789999999999,
+      "combinedYield": 694.2789999999999,
+      "delta": 2275.291,
+      "combinedAutoconsumo": 596.6471499999999,
+      "combinedImmissione": 97.63184999999999
+    },
+    {
+      "date": "2026-03-27",
+      "consumed": 2926.75,
+      "realYield": 167,
+      "pvgisYield": 675.5095,
+      "combinedYield": 842.5095,
+      "delta": 2084.2405,
+      "combinedAutoconsumo": 741.183075,
+      "combinedImmissione": 101.32642499999997
+    },
+    {
+      "date": "2026-03-28",
+      "consumed": 1416.11,
+      "realYield": 567.7,
+      "pvgisYield": 790.645,
+      "combinedYield": 1358.345,
+      "delta": 57.76499999999987,
+      "combinedAutoconsumo": 839.55575,
+      "combinedImmissione": 518.78925
+    },
+    {
+      "date": "2026-03-29",
+      "consumed": 1289.86,
+      "realYield": 317.1,
+      "pvgisYield": 858.0830000000001,
+      "combinedYield": 1175.183,
+      "delta": 114.67699999999991,
+      "combinedAutoconsumo": 614.88905,
+      "combinedImmissione": 560.29395
+    },
+    {
+      "date": "2026-03-30",
+      "consumed": 3025.54,
+      "realYield": 1280,
+      "pvgisYield": 679.821,
+      "combinedYield": 1959.821,
+      "delta": 1065.719,
+      "combinedAutoconsumo": 1857.52785,
+      "combinedImmissione": 102.29314999999997
+    },
+    {
+      "date": "2026-03-31",
+      "consumed": 3127.37,
+      "realYield": 1206.5,
+      "pvgisYield": 669.6579999999999,
+      "combinedYield": 1876.158,
+      "delta": 1251.212,
+      "combinedAutoconsumo": 1774.6293,
+      "combinedImmissione": 101.52869999999984
+    },
+    {
+      "date": "2026-04-01",
+      "consumed": 2779.36,
+      "realYield": 1028.2,
+      "pvgisYield": 806.8145,
+      "combinedYield": 1835.0145,
+      "delta": 944.3455000000001,
+      "combinedAutoconsumo": 1712.8623249999998,
+      "combinedImmissione": 122.15217500000017
+    },
+    {
+      "date": "2026-04-02",
+      "consumed": 2682.91,
+      "realYield": 1070.8,
+      "pvgisYield": 780.916,
+      "combinedYield": 1851.716,
+      "delta": 831.194,
+      "combinedAutoconsumo": 1732.6086,
+      "combinedImmissione": 119.10739999999987
+    },
+    {
+      "date": "2026-04-03",
+      "consumed": 3238.79,
+      "realYield": 1600.5,
+      "pvgisYield": 854.0674999999999,
+      "combinedYield": 2454.5675,
+      "delta": 784.2224999999999,
+      "combinedAutoconsumo": 2325.387375,
+      "combinedImmissione": 129.18012500000032
+    },
+    {
+      "date": "2026-04-04",
+      "consumed": 1854.93,
+      "realYield": 880.5,
+      "pvgisYield": 848.014,
+      "combinedYield": 1728.5140000000001,
+      "delta": 126.41599999999994,
+      "combinedAutoconsumo": 1170.4549,
+      "combinedImmissione": 558.0591000000002
+    },
+    {
+      "date": "2026-04-05",
+      "consumed": 1337.43,
+      "realYield": 642.7,
+      "pvgisYield": 720.7239999999999,
+      "combinedYield": 1363.424,
+      "delta": -25.993999999999915,
+      "combinedAutoconsumo": 885.6834,
+      "combinedImmissione": 477.7406
+    },
+    {
+      "date": "2026-04-06",
+      "consumed": 1392.57,
+      "realYield": 666.1,
+      "pvgisYield": 768.843,
+      "combinedYield": 1434.943,
+      "delta": -42.37300000000005,
+      "combinedAutoconsumo": 1310.14655,
+      "combinedImmissione": 124.79645000000005
+    },
+    {
+      "date": "2026-04-07",
+      "consumed": 2585.19,
+      "realYield": 1488,
+      "pvgisYield": 880.835,
+      "combinedYield": 2368.835,
+      "delta": 216.35500000000002,
+      "combinedAutoconsumo": 2224.70975,
+      "combinedImmissione": 144.12525000000005
+    },
+    {
+      "date": "2026-04-08",
+      "consumed": 3256.26,
+      "realYield": 1623.4,
+      "pvgisYield": 850.6310000000001,
+      "combinedYield": 2474.031,
+      "delta": 782.2290000000003,
+      "combinedAutoconsumo": 2345.63635,
+      "combinedImmissione": 128.39464999999973
+    },
+    {
+      "date": "2026-04-09",
+      "consumed": 3088.88,
+      "realYield": 1553.4,
+      "pvgisYield": 901.131,
+      "combinedYield": 2454.531,
+      "delta": 634.3490000000002,
+      "combinedAutoconsumo": 2317.91135,
+      "combinedImmissione": 136.6196500000001
+    },
+    {
+      "date": "2026-04-10",
+      "consumed": 3330.85,
+      "realYield": 1685.2,
+      "pvgisYield": 895.0875000000001,
+      "combinedYield": 2580.2875000000004,
+      "delta": 750.5624999999995,
+      "combinedAutoconsumo": 2445.274375,
+      "combinedImmissione": 135.0131250000004
+    },
+    {
+      "date": "2026-04-11",
+      "consumed": 1714.01,
+      "realYield": 794.5,
+      "pvgisYield": 803.5314999999999,
+      "combinedYield": 1598.0315,
+      "delta": 115.97849999999994,
+      "combinedAutoconsumo": 1066.826025,
+      "combinedImmissione": 531.205475
+    },
+    {
+      "date": "2026-04-12",
+      "consumed": 1468.39,
+      "realYield": 632.7,
+      "pvgisYield": 833.5564999999999,
+      "combinedYield": 1466.2565,
+      "delta": 2.13350000000014,
+      "combinedAutoconsumo": 912.874775,
+      "combinedImmissione": 553.381725
+    },
+    {
+      "date": "2026-04-13",
+      "consumed": 3543.42,
+      "realYield": 868.3,
+      "pvgisYield": 601.6775,
+      "combinedYield": 1469.9775,
+      "delta": 2073.4425,
+      "combinedAutoconsumo": 1379.675875,
+      "combinedImmissione": 90.30162500000006
+    },
+    {
+      "date": "2026-04-14",
+      "consumed": 3403.83,
+      "realYield": 745.3,
+      "pvgisYield": 619.818,
+      "combinedYield": 1365.118,
+      "delta": 2038.712,
+      "combinedAutoconsumo": 1271.3453,
+      "combinedImmissione": 93.77269999999999
+    },
+    {
+      "date": "2026-04-15",
+      "consumed": 2916.11,
+      "realYield": 1052.7,
+      "pvgisYield": 743.394,
+      "combinedYield": 1796.094,
+      "delta": 1120.016,
+      "combinedAutoconsumo": 1682.7549000000001,
+      "combinedImmissione": 113.33909999999992
+    },
+    {
+      "date": "2026-04-16",
+      "consumed": 3249.84,
+      "realYield": 1330.3,
+      "pvgisYield": 859.2825,
+      "combinedYield": 2189.5825,
+      "delta": 1060.2575000000002,
+      "combinedAutoconsumo": 2060.510125,
+      "combinedImmissione": 129.0723750000002
+    },
+    {
+      "date": "2026-04-17",
+      "consumed": 3462.94,
+      "realYield": 1686.3,
+      "pvgisYield": 973.9185,
+      "combinedYield": 2660.2185,
+      "delta": 802.7215000000001,
+      "combinedAutoconsumo": 2514.130725,
+      "combinedImmissione": 146.08777499999997
+    },
+    {
+      "date": "2026-04-18",
+      "consumed": 1783.8,
+      "realYield": 839.2,
+      "pvgisYield": 727.2655,
+      "combinedYield": 1566.4655,
+      "delta": 217.33449999999993,
+      "combinedAutoconsumo": 1082.022925,
+      "combinedImmissione": 484.44257500000003
+    },
+    {
+      "date": "2026-04-19",
+      "consumed": 1573.13,
+      "realYield": 750.2,
+      "pvgisYield": 837.6665,
+      "combinedYield": 1587.8665,
+      "delta": -14.736499999999978,
+      "combinedAutoconsumo": 1033.963275,
+      "combinedImmissione": 553.903225
+    },
+    {
+      "date": "2026-04-20",
+      "consumed": 3015.87,
+      "realYield": 1565.7,
+      "pvgisYield": 684.3829999999999,
+      "combinedYield": 2250.083,
+      "delta": 765.7869999999998,
+      "combinedAutoconsumo": 2146.10555,
+      "combinedImmissione": 103.97744999999986
+    },
+    {
+      "date": "2026-04-21",
+      "consumed": 2933.79,
+      "realYield": 1442.4,
+      "pvgisYield": 624.414,
+      "combinedYield": 2066.8140000000003,
+      "delta": 866.9759999999997,
+      "combinedAutoconsumo": 1969.7319,
+      "combinedImmissione": 97.08210000000031
+    },
+    {
+      "date": "2026-04-22",
+      "consumed": 2961.17,
+      "realYield": 296.5,
+      "pvgisYield": 664.9275,
+      "combinedYield": 961.4275,
+      "delta": 1999.7425,
+      "combinedAutoconsumo": 861.688375,
+      "combinedImmissione": 99.73912500000006
+    },
+    {
+      "date": "2026-04-23",
+      "consumed": 3120.71,
+      "realYield": 1488.9,
+      "pvgisYield": 902.995,
+      "combinedYield": 2391.895,
+      "delta": 728.815,
+      "combinedAutoconsumo": 2255.64575,
+      "combinedImmissione": 136.24924999999985
+    },
+    {
+      "date": "2026-04-24",
+      "consumed": 1175.03,
+      "realYield": 291.2,
+      "pvgisYield": 989.7415,
+      "combinedYield": 1280.9415,
+      "delta": -105.91149999999993,
+      "combinedAutoconsumo": 1130.800275,
+      "combinedImmissione": 150.14122499999985
+    },
+    {
+      "date": "2026-04-25",
+      "consumed": 291.2,
+      "realYield": 291.2,
+      "pvgisYield": 1089.8545,
+      "combinedYield": 1381.0545,
+      "delta": -1089.8545,
+      "combinedAutoconsumo": 291.2,
+      "combinedImmissione": 1089.8545
+    },
+    {
+      "date": "2026-04-26",
+      "consumed": 291.2,
+      "realYield": 291.2,
+      "pvgisYield": 1091.606,
+      "combinedYield": 1382.806,
+      "delta": -1091.606,
+      "combinedAutoconsumo": 291.2,
+      "combinedImmissione": 1091.606
+    },
+    {
+      "date": "2026-04-27",
+      "consumed": 2130.49,
+      "realYield": 1229.6,
+      "pvgisYield": 928.4935,
+      "combinedYield": 2158.0935,
+      "delta": -27.603500000000167,
+      "combinedAutoconsumo": 2017.2194749999999,
+      "combinedImmissione": 140.87402500000007
+    },
+    {
+      "date": "2026-04-28",
+      "consumed": 3610.13,
+      "realYield": 1918.6,
+      "pvgisYield": 909.577,
+      "combinedYield": 2828.1769999999997,
+      "delta": 781.9530000000004,
+      "combinedAutoconsumo": 2691.04045,
+      "combinedImmissione": 137.13654999999972
+    },
+    {
+      "date": "2026-04-29",
+      "consumed": 3337.4,
+      "realYield": 1741.7,
+      "pvgisYield": 739.8294999999999,
+      "combinedYield": 2481.5295,
+      "delta": 855.8705,
+      "combinedAutoconsumo": 2368.915075,
+      "combinedImmissione": 112.61442500000021
+    },
+    {
+      "date": "2026-04-30",
+      "consumed": 3854.14,
+      "realYield": 1494.2,
+      "pvgisYield": 919.6310000000001,
+      "combinedYield": 2413.831,
+      "delta": 1440.3089999999997,
+      "combinedAutoconsumo": 2275.88635,
+      "combinedImmissione": 137.9446499999999
+    },
+    {
+      "date": "2026-05-01",
+      "consumed": 1759.22,
+      "realYield": 808.6,
+      "pvgisYield": 482.307,
+      "combinedYield": 1290.9070000000002,
+      "delta": 468.3129999999999,
+      "combinedAutoconsumo": 1209.9809500000001,
+      "combinedImmissione": 80.92605000000003
+    },
+    {
+      "date": "2026-05-02",
+      "consumed": 2766.18,
+      "realYield": 1266.7,
+      "pvgisYield": 789.1515,
+      "combinedYield": 2055.8515,
+      "delta": 710.3284999999996,
+      "combinedAutoconsumo": 1534.703025,
+      "combinedImmissione": 521.1484750000002
+    },
+    {
+      "date": "2026-05-03",
+      "consumed": 1619.84,
+      "realYield": 787.7,
+      "pvgisYield": 991.537,
+      "combinedYield": 1779.237,
+      "delta": -159.39700000000016,
+      "combinedAutoconsumo": 1121.88795,
+      "combinedImmissione": 657.34905
+    },
+    {
+      "date": "2026-05-04",
+      "consumed": 3212.31,
+      "realYield": 1464.9,
+      "pvgisYield": 880.8995,
+      "combinedYield": 2345.7995,
+      "delta": 866.5104999999999,
+      "combinedAutoconsumo": 2212.824575,
+      "combinedImmissione": 132.97492499999998
+    },
+    {
+      "date": "2026-05-05",
+      "consumed": 3343.33,
+      "realYield": 797.5,
+      "pvgisYield": 906.3414999999998,
+      "combinedYield": 1703.8414999999998,
+      "delta": 1639.4885000000002,
+      "combinedAutoconsumo": 1567.8902749999997,
+      "combinedImmissione": 135.95122500000002
+    },
+    {
+      "date": "2026-05-06",
+      "consumed": 3375.58,
+      "realYield": 1114.9,
+      "pvgisYield": 939.794,
+      "combinedYield": 2054.694,
+      "delta": 1320.886,
+      "combinedAutoconsumo": 1913.6749,
+      "combinedImmissione": 141.01909999999998
+    },
+    {
+      "date": "2026-05-07",
+      "consumed": 3457.41,
+      "realYield": 1375.1,
+      "pvgisYield": 966.2339999999999,
+      "combinedYield": 2341.334,
+      "delta": 1116.076,
+      "combinedAutoconsumo": 2196.3988999999997,
+      "combinedImmissione": 144.93510000000015
+    },
+    {
+      "date": "2026-05-08",
+      "consumed": 3429.99,
+      "realYield": 971.3,
+      "pvgisYield": 820.22,
+      "combinedYield": 1791.52,
+      "delta": 1638.4699999999998,
+      "combinedAutoconsumo": 1668.487,
+      "combinedImmissione": 123.0329999999999
+    },
+    {
+      "date": "2026-05-09",
+      "consumed": 2835.08,
+      "realYield": 1452.8,
+      "pvgisYield": 994.627,
+      "combinedYield": 2447.4269999999997,
+      "delta": 387.65300000000025,
+      "combinedAutoconsumo": 1793.2794499999998,
+      "combinedImmissione": 654.1475499999999
+    },
+    {
+      "date": "2026-05-10",
+      "consumed": 1591.29,
+      "realYield": 625.2,
+      "pvgisYield": 932.4544999999999,
+      "combinedYield": 1557.6545,
+      "delta": 33.635499999999865,
+      "combinedAutoconsumo": 942.839075,
+      "combinedImmissione": 614.8154250000001
+    },
+    {
+      "date": "2026-05-11",
+      "consumed": 3367.8,
+      "realYield": 1595.8,
+      "pvgisYield": 981.613,
+      "combinedYield": 2577.413,
+      "delta": 790.3870000000002,
+      "combinedAutoconsumo": 2428.02105,
+      "combinedImmissione": 149.39195000000018
+    },
+    {
+      "date": "2026-05-12",
+      "consumed": 3238.65,
+      "realYield": 1429.7,
+      "pvgisYield": 1079.2435,
+      "combinedYield": 2508.9435000000003,
+      "delta": 729.7064999999998,
+      "combinedAutoconsumo": 2345.836975,
+      "combinedImmissione": 163.10652500000015
+    },
+    {
+      "date": "2026-05-13",
+      "consumed": 3150.31,
+      "realYield": 704.5,
+      "pvgisYield": 812.1115,
+      "combinedYield": 1516.6115,
+      "delta": 1633.6985,
+      "combinedAutoconsumo": 1394.554775,
+      "combinedImmissione": 122.05672499999991
+    },
+    {
+      "date": "2026-05-14",
+      "consumed": 3138.88,
+      "realYield": 1497.8,
+      "pvgisYield": 800.3254999999999,
+      "combinedYield": 2298.1255,
+      "delta": 840.7545,
+      "combinedAutoconsumo": 2173.9066749999997,
+      "combinedImmissione": 124.21882500000038
+    },
+    {
+      "date": "2026-05-15",
+      "consumed": 2983.12,
+      "realYield": 942,
+      "pvgisYield": 963.9015000000002,
+      "combinedYield": 1905.9015000000002,
+      "delta": 1077.2184999999997,
+      "combinedAutoconsumo": 1761.3162750000001,
+      "combinedImmissione": 144.58522500000004
+    },
+    {
+      "date": "2026-05-16",
+      "consumed": 1805.08,
+      "realYield": 596.7,
+      "pvgisYield": 635.436,
+      "combinedYield": 1232.136,
+      "delta": 572.944,
+      "combinedAutoconsumo": 812.3526,
+      "combinedImmissione": 419.7833999999999
+    },
+    {
+      "date": "2026-05-17",
+      "consumed": 1557.9,
+      "realYield": 722.7,
+      "pvgisYield": 875.0235,
+      "combinedYield": 1597.7235,
+      "delta": -39.82349999999997,
+      "combinedAutoconsumo": 1018.838225,
+      "combinedImmissione": 578.8852750000001
+    },
+    {
+      "date": "2026-05-18",
+      "consumed": 2971.11,
+      "realYield": 1605,
+      "pvgisYield": 835.6475,
+      "combinedYield": 2440.6475,
+      "delta": 530.4625000000001,
+      "combinedAutoconsumo": 2310.890375,
+      "combinedImmissione": 129.7571250000001
+    },
+    {
+      "date": "2026-05-19",
+      "consumed": 3168.7,
+      "realYield": 1554.5,
+      "pvgisYield": 949.4014999999999,
+      "combinedYield": 2503.9015,
+      "delta": 664.7984999999999,
+      "combinedAutoconsumo": 2360.651275,
+      "combinedImmissione": 143.25022499999977
+    },
+    {
+      "date": "2026-05-20",
+      "consumed": 3502.86,
+      "realYield": 1619.9,
+      "pvgisYield": 837.5935000000001,
+      "combinedYield": 2457.4935,
+      "delta": 1045.3665,
+      "combinedAutoconsumo": 2330.394475,
+      "combinedImmissione": 127.09902499999998
+    },
+    {
+      "date": "2026-05-21",
+      "consumed": 3046.15,
+      "realYield": 1707,
+      "pvgisYield": 1077.9274999999998,
+      "combinedYield": 2784.9275,
+      "delta": 261.2225000000003,
+      "combinedAutoconsumo": 2619.258375,
+      "combinedImmissione": 165.6691249999999
+    },
+    {
+      "date": "2026-05-22",
+      "consumed": 4180,
+      "realYield": 358.3,
+      "pvgisYield": 1092.077,
+      "combinedYield": 1450.377,
+      "delta": 2729.623,
+      "combinedAutoconsumo": 1286.16545,
+      "combinedImmissione": 164.21155
+    },
+    {
+      "date": "2026-05-23",
+      "consumed": 2790.3,
+      "realYield": 423.7,
+      "pvgisYield": 1035.5335,
+      "combinedYield": 1459.2335,
+      "delta": 1331.0665000000001,
+      "combinedAutoconsumo": 786.0467249999999,
+      "combinedImmissione": 673.1867750000001
+    },
+    {
+      "date": "2026-05-24",
+      "consumed": 4437.52,
+      "realYield": 1301.3,
+      "pvgisYield": 1028.1245000000001,
+      "combinedYield": 2329.4245,
+      "delta": 2108.0955000000004,
+      "combinedAutoconsumo": 1660.743575,
+      "combinedImmissione": 668.6809250000001
+    },
+    {
+      "date": "2026-05-25",
+      "consumed": 3781.72,
+      "realYield": 1575.5,
+      "pvgisYield": 1042.1165,
+      "combinedYield": 2617.6165,
+      "delta": 1164.1034999999997,
+      "combinedAutoconsumo": 2460.909025,
+      "combinedImmissione": 156.70747500000016
+    },
+    {
+      "date": "2026-05-26",
+      "consumed": 5155.97,
+      "realYield": 1555.4,
+      "pvgisYield": 1057.215,
+      "combinedYield": 2612.615,
+      "delta": 2543.3550000000005,
+      "combinedAutoconsumo": 2454.03275,
+      "combinedImmissione": 158.58224999999993
+    },
+    {
+      "date": "2026-05-27",
+      "consumed": 7200.9,
+      "realYield": 1952,
+      "pvgisYield": 962.6754999999999,
+      "combinedYield": 2914.6755,
+      "delta": 4286.2245,
+      "combinedAutoconsumo": 2770.274175,
+      "combinedImmissione": 144.40132499999982
+    },
+    {
+      "date": "2026-05-28",
+      "consumed": 6755.2,
+      "realYield": 1752.4,
+      "pvgisYield": 1018.3795,
+      "combinedYield": 2770.7795,
+      "delta": 3984.4204999999997,
+      "combinedAutoconsumo": 2618.022575,
+      "combinedImmissione": 152.75692500000014
+    },
+    {
+      "date": "2026-05-29",
+      "consumed": 2753.2,
+      "realYield": 1163.8,
+      "pvgisYield": 840.8794999999999,
+      "combinedYield": 2004.6794999999997,
+      "delta": 748.5205000000001,
+      "combinedAutoconsumo": 1878.1475749999997,
+      "combinedImmissione": 126.531925
+    },
+    {
+      "date": "2026-05-30",
+      "consumed": 1948.69,
+      "realYield": 671.3,
+      "pvgisYield": 928.2485,
+      "combinedYield": 1599.5484999999999,
+      "delta": 349.1415000000002,
+      "combinedAutoconsumo": 995.9869749999999,
+      "combinedImmissione": 603.561525
+    },
+    {
+      "date": "2026-05-31",
+      "consumed": 2898.8,
+      "realYield": 1175.9,
+      "pvgisYield": 1045.1,
+      "combinedYield": 2221,
+      "delta": 677.8000000000002,
+      "combinedAutoconsumo": 1541.685,
+      "combinedImmissione": 679.315
+    },
+    {
+      "date": "2026-06-01",
+      "consumed": 2000.39,
+      "realYield": 712.1,
+      "pvgisYield": 1133.3975,
+      "combinedYield": 1845.4975,
+      "delta": 154.89250000000015,
+      "combinedAutoconsumo": 1675.487875,
+      "combinedImmissione": 170.00962499999991
+    },
+    {
+      "date": "2026-06-02",
+      "consumed": 3074.59,
+      "realYield": 779.3,
+      "pvgisYield": 978.2555,
+      "combinedYield": 1757.5555,
+      "delta": 1317.0345000000002,
+      "combinedAutoconsumo": 1610.817175,
+      "combinedImmissione": 146.73832500000003
+    },
+    {
+      "date": "2026-06-03",
+      "consumed": 3337,
+      "realYield": 691.2,
+      "pvgisYield": 1120.0394999999999,
+      "combinedYield": 1811.2395,
+      "delta": 1525.7605,
+      "combinedAutoconsumo": 1643.2335749999997,
+      "combinedImmissione": 168.00592500000016
+    },
+    {
+      "date": "2026-06-04",
+      "consumed": 3172.3,
+      "realYield": 623.1,
+      "pvgisYield": 926.1115,
+      "combinedYield": 1549.2115,
+      "delta": 1623.0885000000003,
+      "combinedAutoconsumo": 1410.2947749999998,
+      "combinedImmissione": 138.91672500000004
+    },
+    {
+      "date": "2026-06-05",
+      "consumed": 2548.5,
+      "realYield": 807.3,
+      "pvgisYield": 698.7760000000001,
+      "combinedYield": 1506.076,
+      "delta": 1042.424,
+      "combinedAutoconsumo": 1401.2595999999999,
+      "combinedImmissione": 104.81640000000016
+    },
+    {
+      "date": "2026-06-06",
+      "consumed": 1478.5,
+      "realYield": 390.5,
+      "pvgisYield": 951.9979999999998,
+      "combinedYield": 1342.4979999999998,
+      "delta": 136.00200000000018,
+      "combinedAutoconsumo": 719.4092999999999,
+      "combinedImmissione": 623.0886999999999
+    },
+    {
+      "date": "2026-06-07",
+      "consumed": 561.3,
+      "realYield": 513,
+      "pvgisYield": 1084.1525000000001,
+      "combinedYield": 1597.1525000000001,
+      "delta": -1035.8525000000002,
+      "combinedAutoconsumo": 561.3,
+      "combinedImmissione": 1035.8525000000002
+    }
+  ]
+}

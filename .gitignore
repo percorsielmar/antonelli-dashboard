@@ -1,0 +1,8 @@
+node_modules/
+.env
+data/*.json
+data/solax_export.*
+data/solax_siteDetail.*
+data/Plant Reports *
+data/*.xls
+data/*.xlsx

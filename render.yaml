@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: pascale-dashboard
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: SOLAX_TOKEN_ID
+        sync: false
+      - key: SOLAX_SN
+        value: SKJDTC36XX
+      - key: NODE_ENV
+        value: production
+
+  - type: web
+    name: pascale-dae-anomaly
+    runtime: docker
+    plan: free
+    dockerfilePath: dae_service/Dockerfile
+    dockerContext: dae_service
+    envVars:
+      - key: PASCALE_API_URL
+        value: https://pascale-dashboard.onrender.com
+      - key: SOLAX_CLOUD_EMAIL
+        sync: false
+      - key: SOLAX_CLOUD_PASSWORD
+        sync: false
+      - key: SOLAX_SITE_ID
+        value: "1905618003408482305"
+      - key: ZEUS_ENABLED
+        value: "true"
+      - key: DATABASE_URL
+        sync: false
