@@ -58,12 +58,26 @@ class PascaleDataFetcher:
             if self._zeus_client.is_available:
                 self._zeus_available = True
                 logger.info("Zeus API client inizializzato")
+                # Auto-discover inverter se la lista e' vuota
+                if not INVERTER_SNS:
+                    self._discovered_sns = self._zeus_client.discover_inverters()
+                    logger.info(f"Auto-discovery: {len(self._discovered_sns)} inverter trovati")
+                else:
+                    self._discovered_sns = []
             else:
                 logger.info("Zeus API: credenziali non disponibili, uso API pubblica")
+                self._discovered_sns = []
         except ImportError as e:
             logger.info(f"Zeus API: modulo non disponibile ({e}), uso API pubblica")
+            self._discovered_sns = []
         except Exception as e:
             logger.warning(f"Zeus API: errore inizializzazione — {e}")
+            self._discovered_sns = []
+
+    @property
+    def active_inverter_sns(self) -> list:
+        """Ritorna la lista di SN da usare: configurati o auto-scoperti."""
+        return INVERTER_SNS if INVERTER_SNS else self._discovered_sns
 
     def _ensure_data_dir(self):
         """Crea directory dati se non esiste."""
@@ -79,7 +93,7 @@ class PascaleDataFetcher:
         Recupera i dati real-time.
 
         Se Zeus API e' disponibile, arricchisce i dati con per-MPPT completi.
-        Altrimenti usa solo l'API pubblica.
+        Altrimenti usa solo l'API pubblica (se configurata).
 
         Returns:
             Dizionario con feature dell'impianto + dati raw inverter, oppure None.
@@ -90,13 +104,23 @@ class PascaleDataFetcher:
         if self._zeus_available and self._zeus_client:
             try:
                 zeus_inverters, zeus_mppt_data = self._zeus_client.extract_mppt_flat(
-                    INVERTER_SNS
+                    self.active_inverter_sns
                 )
                 if zeus_inverters:
                     logger.debug(f"Zeus: dati da {len(zeus_inverters)} inverter")
             except Exception as e:
                 logger.warning(f"Zeus API fallita, fallback a API pubblica: {e}")
                 zeus_inverters = None
+
+        # Modalita' solo-Zeus: se non c'e' API pubblica configurata
+        if not self.api_url:
+            if zeus_inverters:
+                features = self._extract_plant_features(zeus_inverters)
+                features["_raw_inverters"] = zeus_inverters
+                features["_zeus_mppt_data"] = zeus_mppt_data
+                features["_data_source"] = "zeus"
+                return features
+            return None
 
         # API pubblica come fonte primaria o fallback
         try:
@@ -365,6 +389,7 @@ class PascaleDataFetcher:
 
         Prova prima l'endpoint /api/snapshots/recent (dati grezzi completi).
         Se non disponibile, usa /api/history/day come fallback.
+        Se nessun backend e' configurato (solo Zeus), ritorna 0.
 
         Args:
             days: numero di giorni di storico da caricare.
@@ -372,6 +397,9 @@ class PascaleDataFetcher:
         Returns:
             Numero di campioni caricati.
         """
+        if not self.api_url:
+            logger.info("Nessun backend configurato (solo Zeus), skip storico")
+            return 0
         count = self._fetch_raw_snapshots(days)
         if count > 0:
             return count

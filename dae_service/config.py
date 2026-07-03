@@ -5,15 +5,18 @@ Si integra con il backend pascale-dashboard gia' deployato su Render.
 
 Supporta analisi per-stringa con normalizzazione per numero moduli
 e raggruppamento automatico per orientamento.
+
+Tutti i parametri specifici dell'impianto sono configurabili tramite
+variabili d'ambiente, rendendo il servizio adattabile a qualsiasi
+impianto SolaX.
 """
 
+import json
 import os
 
-# URL del backend Node.js su Render (oppure localhost per sviluppo)
-PASCALE_API_URL = os.environ.get(
-    "PASCALE_API_URL",
-    "https://pascale-dashboard.onrender.com"
-)
+# URL del backend Node.js su Render (oppure localhost per sviluppo).
+# Lasciare vuoto per modalita' solo-Zeus (nessun backend Node.js necessario).
+PASCALE_API_URL = os.environ.get("PASCALE_API_URL", "")
 
 # Intervallo di polling in secondi (il backend aggiorna ogni 5 min)
 POLLING_INTERVAL = int(os.environ.get("POLLING_INTERVAL", "300"))
@@ -22,17 +25,23 @@ POLLING_INTERVAL = int(os.environ.get("POLLING_INTERVAL", "300"))
 BACKGROUND_POLLING_INTERVAL = int(os.environ.get("BACKGROUND_POLLING_INTERVAL", "300"))
 
 # ---------------------------------------------------------------------------
-# Specifiche moduli fotovoltaici — Trina Vertex S+ NEG18RC.27
+# Nome impianto (visibile in dashboard)
 # ---------------------------------------------------------------------------
-MODULE_VMPP = 34.2       # Tensione al punto di massima potenza (V)
-MODULE_VOC = 41.5         # Tensione a circuito aperto (V)
-MODULE_PNOM = 500         # Potenza nominale (Wp)
-MODULE_TEMP_COEFF = -0.0035  # Coefficiente temperatura potenza (%/°C)
+PLANT_NAME = os.environ.get("PLANT_NAME", "Pascale 500kW")
 
 # ---------------------------------------------------------------------------
-# Inverter dell'impianto Pascale 500kW
+# Specifiche moduli fotovoltaici (default: Trina Vertex S+ NEG18RC.27)
 # ---------------------------------------------------------------------------
-INVERTER_LABELS = {
+MODULE_VMPP = float(os.environ.get("MODULE_VMPP", "34.2"))       # Tensione al punto di massima potenza (V)
+MODULE_VOC = float(os.environ.get("MODULE_VOC", "41.5"))         # Tensione a circuito aperto (V)
+MODULE_PNOM = float(os.environ.get("MODULE_PNOM", "500"))         # Potenza nominale (Wp)
+MODULE_TEMP_COEFF = float(os.environ.get("MODULE_TEMP_COEFF", "-0.0035"))  # Coefficiente temperatura potenza (%/°C)
+
+# ---------------------------------------------------------------------------
+# Inverter dell'impianto (configurabili via env vars)
+# ---------------------------------------------------------------------------
+# Default: impianto Pascale 500kW
+_DEFAULT_INVERTER_LABELS = {
     "H34A15IA529024": "Hybrid 15kW",
     "X3F100J3116121": "X3F 100kW #1",
     "X3F100J3116094": "X3F 100kW #2",
@@ -41,20 +50,16 @@ INVERTER_LABELS = {
     "A3F100L7869005": "A3F 100kW #2",
 }
 
-INVERTER_SNS = list(INVERTER_LABELS.keys())
-
-# MPPT per ogni inverter (reali dal Zeus API, fino a 12 per X3-FTH)
-INVERTER_MPPT_COUNT = {
-    "H34A15IA529024": 2,    # Hybrid 15kW: 2 MPPT
-    "X3F100J3116121": 12,   # X3-FTH 100kW: 12 MPPT
-    "X3F100J3116094": 12,   # X3-FTH 100kW: 12 MPPT
-    "A3F080J6733015": 12,   # X3-FTH 80kW: 12 MPPT
-    "A3F100J7057023": 12,   # X3-FTH 100kW: 12 MPPT
-    "A3F100L7869005": 12,   # X3-FTH 100kW: 12 MPPT
+_DEFAULT_MPPT_COUNT = {
+    "H34A15IA529024": 2,
+    "X3F100J3116121": 12,
+    "X3F100J3116094": 12,
+    "A3F080J6733015": 12,
+    "A3F100J7057023": 12,
+    "A3F100L7869005": 12,
 }
 
-# MPPT fallback per API pubblica (solo 4 campi powerdc1..4)
-INVERTER_MPPT_COUNT_PUBLIC_API = {
+_DEFAULT_MPPT_COUNT_PUBLIC = {
     "H34A15IA529024": 2,
     "X3F100J3116121": 4,
     "X3F100J3116094": 4,
@@ -62,6 +67,39 @@ INVERTER_MPPT_COUNT_PUBLIC_API = {
     "A3F100J7057023": 4,
     "A3F100L7869005": 4,
 }
+
+
+def _load_json_env(key: str, default):
+    """Load a dict/list from env var (JSON string) or return default."""
+    raw = os.environ.get(key)
+    if raw:
+        try:
+            return json.loads(raw)
+        except (json.JSONDecodeError, TypeError):
+            pass
+    return default
+
+
+# INVERTER_LABELS: JSON dict {"SN": "Label", ...} oppure usa default Pascale
+INVERTER_LABELS = _load_json_env("INVERTER_LABELS", _DEFAULT_INVERTER_LABELS)
+
+# INVERTER_SNS: lista di serial number (CSV o JSON array)
+_sns_env = os.environ.get("INVERTER_SNS")
+if _sns_env:
+    if _sns_env.startswith("["):
+        INVERTER_SNS = json.loads(_sns_env)
+    else:
+        INVERTER_SNS = [s.strip() for s in _sns_env.split(",") if s.strip()]
+else:
+    INVERTER_SNS = list(INVERTER_LABELS.keys())
+
+# MPPT per ogni inverter (Zeus API, fino a 12 per X3-FTH)
+INVERTER_MPPT_COUNT = _load_json_env("INVERTER_MPPT_COUNT", _DEFAULT_MPPT_COUNT)
+
+# MPPT fallback per API pubblica (solo 4 campi powerdc1..4)
+INVERTER_MPPT_COUNT_PUBLIC_API = _load_json_env(
+    "INVERTER_MPPT_COUNT_PUBLIC", _DEFAULT_MPPT_COUNT_PUBLIC
+)
 
 # Campi DC potenza e tensione (estesi fino a 12 MPPT per Zeus API)
 DC_POWER_FIELDS = [f"powerdc{i}" for i in range(1, 13)]
@@ -122,8 +160,7 @@ AUTOENCODER_LEARNING_RATE = 0.001
 
 # Soglia anomalia
 ANOMALY_THRESHOLD_SIGMA = 3.0   # media + N*sigma
-TRAINING_SAMPLES_MIN = 50       # Minimo campioni per training aggregato
-STRING_TRAINING_SAMPLES_MIN = 5  # Minimo campioni per training per-stringa
+TRAINING_SAMPLES_MIN = 50       # Minimo campioni per training
 WINDOW_SIZE = 50                # Finestra per soglia dinamica
 
 # Soglia correlazione per raggruppamento orientamento
@@ -140,13 +177,12 @@ STRING_THRESHOLD_FILE = os.path.join(DATA_DIR, "string_threshold.pkl")
 HISTORY_FILE = os.path.join(DATA_DIR, "history.csv")
 STRING_HISTORY_FILE = os.path.join(DATA_DIR, "string_history.csv")
 STRING_MAP_FILE = os.path.join(DATA_DIR, "string_map.pkl")
-STRING_FEATURES_FILE = os.path.join(DATA_DIR, "string_features_meta.pkl")
 
 # ---------------------------------------------------------------------------
 # Zeus API (SolaX Cloud internal API per dati per-MPPT completi)
 # ---------------------------------------------------------------------------
 ZEUS_ENABLED = os.environ.get("ZEUS_ENABLED", "true").lower() in ("1", "true", "yes")
-SOLAX_SITE_ID = os.environ.get("SOLAX_SITE_ID", "1905618003408482305")
+SOLAX_SITE_ID = os.environ.get("SOLAX_SITE_ID", "")
 
 # Dashboard
 DASHBOARD_PORT = int(os.environ.get("DASHBOARD_PORT", "8501"))

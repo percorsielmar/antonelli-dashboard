@@ -74,15 +74,15 @@ class ZeusClient:
     ):
         self.email = email or os.environ.get("SOLAX_CLOUD_EMAIL", "")
         self.password = password or os.environ.get("SOLAX_CLOUD_PASSWORD", "")
-        self.site_id = site_id or os.environ.get("SOLAX_SITE_ID", "1905618003408482305")
+        self.site_id = site_id or os.environ.get("SOLAX_SITE_ID", "")
         self._token: Optional[str] = None
         self._token_expires: float = 0
         self._session = requests.Session()
 
     @property
     def is_available(self) -> bool:
-        """True se le credenziali Zeus sono configurate."""
-        return bool(self.email and self.password)
+        """True se le credenziali Zeus e il site_id sono configurati."""
+        return bool(self.email and self.password and self.site_id)
 
     def _ensure_token(self) -> bool:
         """Ottiene o rinnova il JWT token. Ritorna True se il token e' valido."""
@@ -190,6 +190,27 @@ class ZeusClient:
         except Exception as e:
             logger.error(f"Zeus: errore {endpoint}: {e}")
             return None
+
+    def discover_inverters(self) -> List[str]:
+        """
+        Scopre gli inverter di un sito tramite Zeus API.
+        Utile quando INVERTER_SNS non e' configurato.
+
+        Returns:
+            Lista di serial number degli inverter del sito.
+        """
+        data = self._zeus_get(
+            "devInverter/list",
+            {"siteId": self.site_id, "page": 1, "pageSize": 50},
+        )
+        if not data:
+            return []
+
+        result = data.get("result", {})
+        inverters = result.get("records", [])
+        sns = [inv.get("sn", "") for inv in inverters if inv.get("sn")]
+        logger.info(f"Zeus: trovati {len(sns)} inverter per sito {self.site_id}")
+        return sns
 
     def get_inverter_mppt_data(self, sn: str) -> Optional[Dict]:
         """
