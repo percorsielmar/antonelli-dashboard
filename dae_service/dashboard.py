@@ -26,6 +26,7 @@ from config import (
     INVERTER_LABELS,
     PASCALE_API_URL,
     PLANT_FEATURES,
+    PLANT_NAME,
     POLLING_INTERVAL,
 )
 from anomaly_detector import AnomalyDetector
@@ -35,7 +36,7 @@ import background_poller as poller
 # ===================== PAGINA =====================
 
 st.set_page_config(
-    page_title="Pascale 500kW - Anomaly Detection DAE-O",
+    page_title=f"{PLANT_NAME} - Anomaly Detection DAE-O",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -137,7 +138,10 @@ def generate_demo_data():
 
 with st.sidebar:
     st.title("DAE-O Config")
-    st.caption(f"API: {PASCALE_API_URL}")
+    if PASCALE_API_URL:
+        st.caption(f"API: {PASCALE_API_URL}")
+    else:
+        st.caption("Modalità: solo Zeus API")
 
     # Zeus API status
     fetcher = st.session_state.detector.fetcher
@@ -192,9 +196,7 @@ with st.sidebar:
         with st.spinner("Training DAE per-stringa..."):
             metrics = st.session_state.detector.train_string_model()
             if "error" in metrics:
-                n = metrics.get("samples", 0)
-                mn = metrics.get("min", 5)
-                st.error(f"{metrics['error']} ({n}/{mn} campioni con dati per-stringa)")
+                st.error(metrics["error"])
             else:
                 st.success(f"MSE medio: {metrics.get('train_mse_mean', 0):.6f}")
 
@@ -241,7 +243,7 @@ with st.sidebar:
 
 # ===================== MAIN =====================
 
-st.title("Pascale 500kW — Anomaly Detection (DAE-O)")
+st.title(f"{PLANT_NAME} — Anomaly Detection (DAE-O)")
 
 # Tab layout
 tab_plant, tab_strings, tab_latent = st.tabs([

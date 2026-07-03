@@ -9,7 +9,7 @@ COPY . .
 
 RUN mkdir -p data
 
-ENV PASCALE_API_URL=https://pascale-dashboard.onrender.com
+ENV PASCALE_API_URL=
 ENV STREAMLIT_SERVER_HEADLESS=true
 ENV PORT=10000
 
