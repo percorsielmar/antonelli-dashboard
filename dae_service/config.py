@@ -185,5 +185,8 @@ ZEUS_ENABLED = os.environ.get("ZEUS_ENABLED", "true").lower() in ("1", "true", "
 SOLAX_SITE_ID = os.environ.get("SOLAX_SITE_ID", "")
 STRING_TRAINING_SAMPLES_MIN = 50
 STRING_FEATURES_FILE = "string_features.pkl"
+STRING_FEATURES_FILE = "string_features.pkl"
+PASCALE_MODEL_FILE = "pascale_model.h5"
+STRING_MODEL_FILE = "string_model.h5"
 # Dashboard
 DASHBOARD_PORT = int(os.environ.get("DASHBOARD_PORT", "8501"))
