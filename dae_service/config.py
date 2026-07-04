@@ -183,6 +183,6 @@ STRING_MAP_FILE = os.path.join(DATA_DIR, "string_map.pkl")
 # ---------------------------------------------------------------------------
 ZEUS_ENABLED = os.environ.get("ZEUS_ENABLED", "true").lower() in ("1", "true", "yes")
 SOLAX_SITE_ID = os.environ.get("SOLAX_SITE_ID", "")
-
+STRING_TRAINING_SAMPLES_MIN = 50
 # Dashboard
 DASHBOARD_PORT = int(os.environ.get("DASHBOARD_PORT", "8501"))
