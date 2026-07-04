@@ -40,7 +40,7 @@ MODULE_TEMP_COEFF = float(os.environ.get("MODULE_TEMP_COEFF", "-0.0035"))  # Coe
 # ---------------------------------------------------------------------------
 # Inverter dell'impianto (configurabili via env vars)
 # ---------------------------------------------------------------------------
-# Default: impianto Pascale 500kW
+# Default: impianto Antonelli 10kW
 _DEFAULT_INVERTER_LABELS = {
     "H4602AI7019041": "Hybrid 6kW",
     
