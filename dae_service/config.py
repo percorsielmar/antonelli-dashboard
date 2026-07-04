@@ -34,7 +34,7 @@ PLANT_NAME = os.environ.get("PLANT_NAME", "Antonelli 10kW")
 # ---------------------------------------------------------------------------
 MODULE_VMPP = float(os.environ.get("MODULE_VMPP", "34.2"))       # Tensione al punto di massima potenza (V)
 MODULE_VOC = float(os.environ.get("MODULE_VOC", "41.5"))         # Tensione a circuito aperto (V)
-MODULE_PNOM = float(os.environ.get("MODULE_PNOM", "500"))         # Potenza nominale (Wp)
+MODULE_PNOM = float(os.environ.get("MODULE_PNOM", "450"))         # Potenza nominale (Wp)
 MODULE_TEMP_COEFF = float(os.environ.get("MODULE_TEMP_COEFF", "-0.0035"))  # Coefficiente temperatura potenza (%/°C)
 
 # ---------------------------------------------------------------------------
@@ -42,7 +42,7 @@ MODULE_TEMP_COEFF = float(os.environ.get("MODULE_TEMP_COEFF", "-0.0035"))  # Coe
 # ---------------------------------------------------------------------------
 # Default: impianto Pascale 500kW
 _DEFAULT_INVERTER_LABELS = {
-    "H34A15IA529024": "Hybrid 6kW",
+    "H4602AI7019041": "Hybrid 6kW",
     
 }
 
