@@ -16,8 +16,8 @@ import os
 
 # URL del backend Node.js su Render (oppure localhost per sviluppo).
 # Lasciare vuoto per modalita' solo-Zeus (nessun backend Node.js necessario).
-PASCALE_API_URL = os.environ.get("PASCALE_API_URL", "")
-
+# PASCALE_API_URL = os.environ.get("PASCALE_API_URL", "")
+PASCALE_API_URL = os.environ.get("API_URL", "https://api.zeus-monitoring.com/v1")
 # Intervallo di polling in secondi (il backend aggiorna ogni 5 min)
 POLLING_INTERVAL = int(os.environ.get("POLLING_INTERVAL", "300"))
 
@@ -27,7 +27,7 @@ BACKGROUND_POLLING_INTERVAL = int(os.environ.get("BACKGROUND_POLLING_INTERVAL", 
 # ---------------------------------------------------------------------------
 # Nome impianto (visibile in dashboard)
 # ---------------------------------------------------------------------------
-PLANT_NAME = os.environ.get("PLANT_NAME", "Pascale 500kW")
+PLANT_NAME = os.environ.get("PLANT_NAME", "Antonelli 10kW")
 
 # ---------------------------------------------------------------------------
 # Specifiche moduli fotovoltaici (default: Trina Vertex S+ NEG18RC.27)
