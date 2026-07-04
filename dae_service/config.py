@@ -42,21 +42,14 @@ MODULE_TEMP_COEFF = float(os.environ.get("MODULE_TEMP_COEFF", "-0.0035"))  # Coe
 # ---------------------------------------------------------------------------
 # Default: impianto Pascale 500kW
 _DEFAULT_INVERTER_LABELS = {
-    "H34A15IA529024": "Hybrid 15kW",
-    "X3F100J3116121": "X3F 100kW #1",
-    "X3F100J3116094": "X3F 100kW #2",
-    "A3F080J6733015": "A3F 80kW",
-    "A3F100J7057023": "A3F 100kW #1",
-    "A3F100L7869005": "A3F 100kW #2",
+    "H34A15IA529024": "Hybrid 6kW",
+    
 }
 
 _DEFAULT_MPPT_COUNT = {
-    "H34A15IA529024": 2,
-    "X3F100J3116121": 12,
-    "X3F100J3116094": 12,
-    "A3F080J6733015": 12,
-    "A3F100J7057023": 12,
-    "A3F100L7869005": 12,
+    "H4602AI7019041
+": 2,
+   
 }
 
 _DEFAULT_MPPT_COUNT_PUBLIC = {
